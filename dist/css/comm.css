@@ -293,30 +293,82 @@ legend {
 }
 
 #header {
-  border-bottom: 1px solid #000;
+  position: fixed;
+  background: #000;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+#header #logo img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 #header .inner {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   height: 70px;
 }
-#header .lst-util {
-  display: flex;
+#header .btn-g {
+  height: 40px;
+  width: 70px;
 }
-#header .lst-util .btn-g {
-  width: 40px;
-  height: 70px;
-}
-#header .lst-util .btn-g::before {
+#header .btn-g::before {
   font-size: 20px;
-  font-family: "Font Awesome 6 Free";
+  font-family: "Font Awesome 6 free";
 }
 #header .lst-util .btn-search::before {
   content: "\f002";
+  font-family: "Font Awesome 6 free";
   font-weight: 900;
+  padding: 5px;
+  color: #fff;
 }
-#header .lst-util .btn-burger::before {
+#header .lst-util2 .btn-ham::before {
   content: "\f007";
+  font-family: "Font Awesome 6 free";
+  font-weight: 500;
+  padding: 5px;
+  color: #fff;
+}
+
+body {
+  background: url();
+}
+
+#main {
+  padding-top: 70px;
+}
+#main img {
+  width: 100%;
+}
+
+.b-g {
+  display: block;
+  margin: 20px;
+  width: 239px;
+  height: 63.864px;
+  color: #000;
+  /* Libre/h2-bold-24 */
+  font-family: Libre Baskerville;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 28.8px */
+}
+
+.p-g {
+  display: block;
+  padding: 20px;
+  width: 334px;
+  height: 138.371px;
+  color: #000;
+  /* roboto-r/body3-14 */
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
   font-weight: 400;
+  line-height: 120%; /* 16.8px */
 }/*# sourceMappingURL=comm.css.map */
