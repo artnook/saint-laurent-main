@@ -35,10 +35,9 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <link
       rel="stylesheet"
@@ -47,7 +46,7 @@
     <link rel="stylesheet" href="./dist/css/comm.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script defer src="./dist/js/comm.js"></script>
+    <script src="./dist/js/comm.js"></script>
   </head>
   <body>
     <div id="u-skip">
@@ -55,22 +54,34 @@
       <a href="#main"><span>컨텐츠 바로가기</span></a>
       <a href="#footer"><span>풋터 바로가기</span></a>
     </div>
+    <style></style>
+
     <div class="wrap">
       <header id="header" class="container">
+        <!-- 이너 -->
         <div class="inner">
-          <h1 id="logo">
-            <a href="#">logo</a>
-          </h1>
-          <div class="util">
+          <!-- 유틸1 -->
+          <div class="util-1">
             <ul class="lst-util">
               <li>
-                <!-- a : 링크 연결 / button : 동작처리 -->
+                <!-- a : 링크 연결 / button : 동작 처리  -->
                 <button class="btn-g btn-search">
                   <span class="blind">검색</span>
                 </button>
               </li>
+            </ul>
+          </div>
+          <!-- 로고 -->
+          <h1 id="logo">
+            <a href="#">
+              <img src="./images/logo.png" alt="logo" />
+            </a>
+          </h1>
+          <!-- 유틸2 -->
+          <div class="util-2">
+            <ul class="lst-util2">
               <li>
-                <button class="btn-g btn-burger">
+                <button class="btn-g btn-ham">
                   <span class="blind">마이페이지</span>
                 </button>
               </li>
@@ -78,7 +89,83 @@
           </div>
         </div>
       </header>
-      <div class="slide-wrap slide-name">slide</div>
+      <div id="main" class="section">
+        <div class="section1">
+          <img src="./images/브랜드 소개 사진 1.png" alt="브랜드 소개1" />
+          <p>
+            SUSTAINABILITY APPROACH SAINT LAURENT’S APPROACH IS ROOTED IN A
+            QUEST TO CONSTANTLY IMPROVE—IN MEANINGFUL AND MEASURABLE WAYS.
+            RECOGNIZING THE COMPLEX NATURE OF SUSTAINABILITY, THE HOUSE IS
+            ENGAGED IN A BROAD RANGE OF INITIATIVES AIMED AT PROTECTING HUMAN
+            RIGHTS AND DIGNITY, PRESERVING THE ENVIRONMENT, AND IMPLEMENTING
+            RESPONSIBLE SOURCING.
+          </p>
+        </div>
+        <div class="section2">
+          <img src="./images/브랜드 소개 사진 2.png" alt="브랜드 소개1" />
+          <p>
+            As part of the SustainabilityCriterion Kering Group, Saint Laurent
+            is pursuing a multi-pronged strategy to establish a more sustainable
+            and responsible concept of luxury. The House and its partners follow
+            codes and standards developed and improved by Kering
+          </p>
+        </div>
+        <div class="section3">
+          <img src="./images/소개이미지 3.png" alt="브랜드 소개1" />
+          <p>
+            Measuring sustainability effects SAINT LAURENT strives to increase
+            comparability by making the environmental impact of its activities
+            visible and quantifiable through KERING's Environmental Income and
+            Loss (EP&L) statement . Since 2012, the tool has been used to
+            measure carbon emissions, water consumption, air and water
+            pollution, land use, and waste production along the entire supply
+            chain. The impact you measure translates into monetary value,
+            driving strategies, improving processes, and enabling you to choose
+            the most appropriate technology.
+          </p>
+        </div>
+        <div class="section4">
+          <img src="./images/소개이미지 4.png" alt="브랜드 소개1" />
+          <p>
+            Sustainability House Operations “At SAINT LAURENT, sustainability is
+            a fundamental promise, not a marketing move, but the house
+            spirit.”CEO FRANCESCA BELLETTINI In addition to setting strict
+            standards for its partners, SAINT LAURENT applies its sustainability
+            principles and industry-leading practices within its House. energy
+            consumption. In 2022, 100% of the electricity consumed by SAINT
+            LAURENT ateliers, offices and stores comes from renewable sources.
+            The house prioritizes the use of alternative energy, such as the
+            Angers RTW atelier with a biomass heating system.
+          </p>
+        </div>
+        <div class="section5">
+          <img src="./images/소개이미지 5.png" alt="브랜드 소개1" />
+          <p>
+            Sustainable raw materials SAINT LAURENT recognizes that thorough and
+            consistent research on raw materials and their sources is critical
+            to reducing our environmental impact. The House aims to achieve 100%
+            traceability of its main raw materials and 100% compliance with
+            KERING's standards for raw materials and manufacturing processes by
+            2025.
+          </p>
+        </div>
+        <div class="section6">
+          <img src="./images/소개이미지 6.png" alt="브랜드 소개1" />
+          <p>SUSTAINABILITY APPROACH</p>
+        </div>
+        <div class="section7">
+          <img src="./images/소개이미지 7.png" alt="브랜드 소개1" />
+          <p>SUSTAINABILITY APPROACH</p>
+        </div>
+        <div class="section8">
+          <img src="./images/소개이미지 8.png" alt="브랜드 소개1" />
+          <p>SUSTAINABILITY APPROACH</p>
+        </div>
+        <div class="section9">
+          <img src="./images/소개이미지 9.png" alt="브랜드 소개1" />
+          <p>SUSTAINABILITY APPROACH</p>
+        </div>
+      </div>
       <main id="main" class="container">컨텐츠</main>
       <footer id="footer" class="container">풋터</footer>
     </div>
