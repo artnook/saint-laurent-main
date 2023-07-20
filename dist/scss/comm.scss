@@ -105,6 +105,23 @@
 #footer {
   position: relative;
 
+  .lst-foot {
+    > li {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      border-bottom: 1px solid #000;
+    }
+  }
+  .lst-sns {
+    display: flex;
+    a {
+      display: flex;
+      align-items: center;
+      margin: 5px;
+    }
+  }
+
   .footerlogo {
     padding: 20px 20px;
   }
@@ -123,7 +140,6 @@
   .iconbox {
     display: flex;
     flex-direction: row-reverse;
-    float: right;
     margin-right: 10px;
   }
   .fp {
@@ -132,7 +148,6 @@
   }
   .footerbox {
     position: relative;
-    border-bottom: 1px solid #000;
     padding: 5px;
   }
   .ocean {

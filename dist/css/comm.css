@@ -378,6 +378,20 @@ legend {
 #footer {
   position: relative;
 }
+#footer .lst-foot > li {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid #000;
+}
+#footer .lst-sns {
+  display: flex;
+}
+#footer .lst-sns a {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+}
 #footer .footerlogo {
   padding: 20px 20px;
 }
@@ -396,7 +410,6 @@ legend {
 #footer .iconbox {
   display: flex;
   flex-direction: row-reverse;
-  float: right;
   margin-right: 10px;
 }
 #footer .fp {
@@ -405,7 +418,6 @@ legend {
 }
 #footer .footerbox {
   position: relative;
-  border-bottom: 1px solid #000;
   padding: 5px;
 }
 #footer .ocean {
