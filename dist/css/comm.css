@@ -336,6 +336,9 @@ legend {
   color: #fff;
 }
 
+#main {
+  padding-top: 70px;
+}
 #main img {
   width: 100%;
 }
