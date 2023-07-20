@@ -332,7 +332,6 @@ legend {
   margin: -10%;
   font-family: "Font Awesome 6 free";
   font-weight: 500;
-  padding: 5px;
   color: #fff;
 }
 
@@ -343,7 +342,7 @@ legend {
   width: 100%;
 }
 
-.sec-introduce .b-g {
+.sec-introduce .txt-shopping__tit {
   display: block;
   margin: 50px 30px 0px;
   color: #000;
@@ -354,7 +353,7 @@ legend {
   font-weight: 700;
   line-height: 120%; /* 28.8px */
 }
-.sec-introduce .p-g {
+.sec-introduce .txt-shopping__desc {
   display: block;
   margin: 20px 30px 50px;
   color: #000;
@@ -389,7 +388,12 @@ legend {
   height: 20px;
   flex-shrink: 0;
 }
-#footer .icon {
+#footer .material-icons-outlined {
+  position: absolute;
+  display: inline-block;
+  font-size: 0.9rem;
+}
+#footer .iconbox {
   display: flex;
   flex-direction: row-reverse;
   float: right;
@@ -399,13 +403,12 @@ legend {
   position: relative;
   padding: 5px;
 }
-#footer .fp-g {
+#footer .footerbox {
   position: relative;
   border-bottom: 1px solid #000;
   padding: 5px;
 }
-
-.ocean {
+#footer .ocean {
   overflow: hidden;
   width: 100%;
   border-bottom: 1px solid #000;
@@ -419,8 +422,7 @@ legend {
   display: flex;
   align-items: center;
 }
-
-.wave {
+#footer .wave {
   background: url(../../images/logo\ balck.png) repeat-x;
   position: absolute;
   z-index: 100;
@@ -430,7 +432,6 @@ legend {
   animation: wave 20s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
   transform: translate3d(0, 0, 0);
 }
-
 @keyframes wave {
   0% {
     margin-left: 0;

@@ -53,7 +53,6 @@
       margin: -10%;
       font-family: "Font Awesome 6 free";
       font-weight: 500;
-      padding: 5px;
       color: #fff;
     }
   }
@@ -66,7 +65,7 @@
   }
 }
 .sec-introduce {
-  .b-g {
+  .txt-shopping__tit {
     display: block;
     margin: 50px $mz 0px;
 
@@ -78,7 +77,7 @@
     font-weight: 700;
     line-height: 120%; /* 28.8px */
   }
-  .p-g {
+  .txt-shopping__desc {
     display: block;
     margin: 20px $mz 50px;
     // width: 334px;
@@ -105,8 +104,7 @@
 }
 #footer {
   position: relative;
-  .footer-wrap {
-  }
+
   .footerlogo {
     padding: 20px 20px;
   }
@@ -117,7 +115,12 @@
     height: 20px;
     flex-shrink: 0;
   }
-  .icon {
+  .material-icons-outlined {
+    position: absolute;
+    display: inline-block;
+    font-size: 0.9rem;
+  }
+  .iconbox {
     display: flex;
     flex-direction: row-reverse;
     float: right;
@@ -127,49 +130,43 @@
     position: relative;
     padding: 5px;
   }
-  .fp-g {
+  .footerbox {
     position: relative;
     border-bottom: 1px solid #000;
     padding: 5px;
   }
-}
-
-// best seen at 1500px or less
-
-// html, body { height: 100%; }
-
-.ocean {
-  overflow: hidden;
-  width: 100%;
-  border-bottom: 1px solid #000;
-  border-top: 1px solid #000;
-  margin-bottom: 40px;
-  padding: 0 0;
-  height: 50px;
-  top: 50%;
-  margin-top: 80px;
-  transform: translateY(-50%);
-  display: flex;
-  align-items: center;
-}
-
-.wave {
-  background: url(../../images/logo\ balck.png) repeat-x;
-  // background-size: auto 100%;
-  position: absolute;
-  z-index: 100;
-  top: 13px;
-  width: 6400px;
-  height: 198px;
-  animation: wave 20s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
-  transform: translate3d(0, 0, 0);
-}
-
-@keyframes wave {
-  0% {
-    margin-left: 0;
+  .ocean {
+    overflow: hidden;
+    width: 100%;
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+    margin-bottom: 40px;
+    padding: 0 0;
+    height: 50px;
+    top: 50%;
+    margin-top: 80px;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
   }
-  100% {
-    margin-left: -1600px;
+  .wave {
+    background: url(../../images/logo\ balck.png) repeat-x;
+    // background-size: auto 100%;
+    position: absolute;
+    z-index: 100;
+    top: 13px;
+    width: 6400px;
+    height: 198px;
+    animation: wave 20s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+    transform: translate3d(0, 0, 0);
+  }
+
+  @keyframes wave {
+    0% {
+      margin-left: 0;
+    }
+    100% {
+      margin-left: -1600px;
+    }
   }
 }
