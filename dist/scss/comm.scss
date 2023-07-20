@@ -104,6 +104,7 @@
 }
 #footer {
   position: relative;
+  margin-bottom: 60px;
 
   .lst-foot {
     > li {
@@ -111,6 +112,9 @@
       justify-content: space-between;
       width: 100%;
       border-bottom: 1px solid #000;
+    }
+    > li:last-child {
+      border: 1px solid #ffffff;
     }
   }
   .lst-sns {

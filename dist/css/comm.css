@@ -377,12 +377,16 @@ legend {
 
 #footer {
   position: relative;
+  margin-bottom: 60px;
 }
 #footer .lst-foot > li {
   display: flex;
   justify-content: space-between;
   width: 100%;
   border-bottom: 1px solid #000;
+}
+#footer .lst-foot > li:last-child {
+  border: 1px solid #ffffff;
 }
 #footer .lst-sns {
   display: flex;
