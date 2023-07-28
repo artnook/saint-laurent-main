@@ -172,6 +172,15 @@
       // display none, block은 트렌지션 적용x
       // 2개 이상 적용시 all -> 위치값 다시 적용
     }
+    .bar-w {
+      display: block;
+      width: 26px;
+      height: 2px;
+      background: $b;
+      transition: all 0.3s;
+      // display none, block은 트렌지션 적용x
+      // 2개 이상 적용시 all -> 위치값 다시 적용
+    }
     span {
       &:nth-child(3) {
         margin: 5px 0;

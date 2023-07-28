@@ -1308,6 +1308,13 @@ legend {
   background: #fff;
   transition: all 0.3s;
 }
+.gnb-wrap .label-burger .bar-w {
+  display: block;
+  width: 26px;
+  height: 2px;
+  background: #000;
+  transition: all 0.3s;
+}
 .gnb-wrap .label-burger span:nth-child(3) {
   margin: 5px 0;
 }
