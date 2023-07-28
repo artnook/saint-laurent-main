@@ -1,6 +1,7 @@
 @charset "UTF-8";
-@import "variables", "fonts", "main", "contents", "cart", "item-view", "reset";
+@import "variables", "mixin", "fonts", "reset", "main", "contents", "goods";
 
+// 공통
 .container {
   padding: 0 4%;
 }
@@ -59,6 +60,7 @@
     .btn-g {
       height: 40px;
       width: 70px;
+      background: $w;
       &::before {
         font-size: 20px;
         font-family: "Font Awesome 6 free";
@@ -136,6 +138,7 @@
         .bar {
           background: $w;
           &:nth-child(2) {
+            background: $w;
             transform: rotate(45deg) translate(4px, 4px);
           }
           &:nth-child(3) {
@@ -143,6 +146,22 @@
             opacity: 0;
           }
           &:nth-child(4) {
+            background: $w;
+            transform: rotate(-45deg) translate(6px, -6px);
+          }
+        }
+        .bar-w {
+          background: $w;
+          &:nth-child(2) {
+            background: $w;
+            transform: rotate(45deg) translate(4px, 4px);
+          }
+          &:nth-child(3) {
+            // display: none;
+            opacity: 0;
+          }
+          &:nth-child(4) {
+            background: $w;
             transform: rotate(-45deg) translate(6px, -6px);
           }
         }
@@ -168,6 +187,15 @@
       width: 26px;
       height: 2px;
       background: $w;
+      transition: all 0.3s;
+      // display none, block은 트렌지션 적용x
+      // 2개 이상 적용시 all -> 위치값 다시 적용
+    }
+    .bar-w {
+      display: block;
+      width: 26px;
+      height: 2px;
+      background: $b;
       transition: all 0.3s;
       // display none, block은 트렌지션 적용x
       // 2개 이상 적용시 all -> 위치값 다시 적용
@@ -227,25 +255,23 @@
 // footer
 #footer {
   position: relative;
-  padding-bottom: 60px;
-  background: #000;
+  margin-bottom: 60px;
   .lst-foot {
     li {
       display: flex;
       justify-content: space-between;
       width: 100%;
-      border-bottom: 1px solid $w;
+      border-bottom: 1px solid $b;
       .iconbox {
-        border-bottom: 1px solid $b;
+        border-bottom: 1px solid #ffffff;
       }
     }
     li:last-child {
-      border-bottom: 1px solid $b;
+      border-bottom: 1px solid #ffffff;
     }
   }
   .lst-sns {
     display: flex;
-    margin-right: -20px;
     a {
       display: flex;
       align-items: center;
@@ -255,13 +281,13 @@
   li {
     position: relative;
     padding: 5px;
-    color: $w;
+    color: $b;
     align-items: center;
   }
   li:first-child {
     position: relative;
     padding: 5px;
-    color: $w;
+    color: $b;
   }
   .material-icons-outlined {
     position: absolute;
@@ -274,7 +300,7 @@
   display: flex;
   flex-direction: row-reverse;
   margin-right: 10px;
-  color: $w;
+  color: $b;
 }
 .ocean {
   padding: 20px 20px;
@@ -289,13 +315,13 @@
 .li:first-child {
   position: relative;
   padding: 5px;
-  color: $w;
+  color: $b;
 }
 .ocean {
   overflow: hidden;
   width: 100%;
-  border-bottom: 1px solid $w;
-  border-top: 1px solid $w;
+  border-bottom: 1px solid $b;
+  border-top: 1px solid $b;
   margin-bottom: 40px;
   padding: 0 0;
   height: 50px;
@@ -306,8 +332,7 @@
   align-items: center;
 }
 .wave {
-  background: url(../../images/comm/white/saintlaurent-logo-slide-white.png)
-    repeat-x;
+  background: url(../../images/comm/footer/slidelogo-black.png) repeat-x;
   // background-size: auto 100%;
   position: absolute;
   z-index: 100;
