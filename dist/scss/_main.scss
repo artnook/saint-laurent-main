@@ -1,0 +1,160 @@
+// .contents {
+//   z-index: -5;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   width: 100%;
+//   height: 100vh;
+//   overflow: hidden;
+//   .cont-main {
+//     display: block;
+//   }
+//   .cont-main img {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     display: block;
+//     width: 100%;
+//     height: 100%;
+//     object-fit: cover;
+//   }
+// }
+
+.main-container {
+  margin-top: -70px;
+  background: #000;
+}
+.section-intro {
+  z-index: -5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: $b;
+  // position: relative;
+  .main-img {
+    // position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.part-sec {
+  margin-top: 70px;
+}
+.part-g {
+  img {
+    width: 100%;
+    vertical-align: middle;
+    overflow: clip;
+  }
+  .main-tg {
+    margin: 40px 40px;
+  }
+}
+
+.main-tg {
+  color: #fff;
+  text-align: center;
+  /* roboto-r/body1-18 */
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 21.6px */
+}
+
+/*YOUTUBE VIDEO*/
+
+.youtube {
+  position: relative;
+  height: 700px;
+  background-color: #333;
+  overflow: hidden;
+
+  .youtube__area {
+    width: 1920px;
+    position: absolute;
+
+    /* 16비율 */
+    left: 50%;
+    margin-left: calc(1920px / -2);
+
+    /* 9비율 */
+    top: 50%;
+    margin-top: calc(1920px * 9 / 16 / -2);
+
+    &::before {
+      content: "";
+      display: block;
+      /* 16:9 영상 비율로 요소 크기 만들기! */
+      width: 100%;
+      height: 0;
+      padding-top: 56.25%;
+    }
+  }
+
+  .youtube__cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.slide-t {
+  color: #ffffff;
+  text-align: center;
+  font-family: Libre Baskerville;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 80px 60px;
+}
+.slide-b {
+  text-decoration: underline;
+  color: #ffffff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 40px 80px;
+}
+#player {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
