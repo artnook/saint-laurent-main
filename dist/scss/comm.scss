@@ -1,5 +1,6 @@
 @charset "UTF-8";
-@import "variables", "mixin", "fonts", "reset", "main", "contents", "goods";
+@import "variables", "mixin", "fonts", "reset", "main", "contents", "item-view",
+  "cart", "goods";
 
 // 공통
 .container {
@@ -243,7 +244,7 @@
     }
 
     li {
-      color: #ffffff;
+      color: $w;
       line-height: 30px;
     }
     a {
@@ -255,23 +256,24 @@
 // footer
 #footer {
   position: relative;
-  margin-bottom: 60px;
+
   .lst-foot {
     li {
       display: flex;
       justify-content: space-between;
       width: 100%;
-      border-bottom: 1px solid $b;
+      border-bottom: 1px solid $w;
       .iconbox {
-        border-bottom: 1px solid #ffffff;
+        border-bottom: 1px solid $b;
       }
     }
     li:last-child {
-      border-bottom: 1px solid #ffffff;
+      border-bottom: 1px solid $b;
     }
   }
   .lst-sns {
     display: flex;
+    margin-right: -20px;
     a {
       display: flex;
       align-items: center;
@@ -281,13 +283,13 @@
   li {
     position: relative;
     padding: 5px;
-    color: $b;
+    color: $w;
     align-items: center;
   }
   li:first-child {
     position: relative;
     padding: 5px;
-    color: $b;
+    color: $w;
   }
   .material-icons-outlined {
     position: absolute;
@@ -315,13 +317,13 @@
 .li:first-child {
   position: relative;
   padding: 5px;
-  color: $b;
+  color: $w;
 }
 .ocean {
   overflow: hidden;
   width: 100%;
-  border-bottom: 1px solid $b;
-  border-top: 1px solid $b;
+  border-bottom: 1px solid $w;
+  border-top: 1px solid $w;
   margin-bottom: 40px;
   padding: 0 0;
   height: 50px;
@@ -332,7 +334,8 @@
   align-items: center;
 }
 .wave {
-  background: url(../../images/comm/footer/slidelogo-black.png) repeat-x;
+  background: url(../../images/comm/white/saintlaurent-logo-slide-white.png)
+    repeat-x;
   // background-size: auto 100%;
   position: absolute;
   z-index: 100;
