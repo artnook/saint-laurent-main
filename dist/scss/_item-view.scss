@@ -198,7 +198,7 @@
   }
 }
 
-.cart-button {
+.cart-go-button {
   all: unset;
   display: flex;
   width: 205px;
@@ -429,17 +429,16 @@
 }
 .modal {
   display: none;
-  visibility: hidden;
 }
 .modal-dimmed {
-  // display: flex;
-  display: none;
+  display: flex;
+  // display: none;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 5000;
+  z-index: 10000;
   background: rgb(0, 0, 0, 0.5);
   align-items: flex-end;
   .modal-wrap {
