@@ -9,12 +9,17 @@
 .wrap {
   padding-top: 70px;
 }
+
+// 헤더 하얀 배경
 #header {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 6000;
+  .header-w {
+    background: $w;
+  }
   .header-wrap {
     display: flex;
     // position: fixed;
@@ -68,6 +73,8 @@
       }
     }
   }
+
+  // 헤더 블랙 배경
   .header-wrap-b {
     display: flex;
     // position: fixed;
@@ -124,6 +131,7 @@
       }
     }
   }
+
   .container-intro {
     background: $b;
     .header-wrap-intro {
@@ -416,6 +424,7 @@
   }
 }
 
+// footer 하얀색
 #footer-w {
   position: relative;
 
@@ -466,10 +475,10 @@
   margin-right: 10px;
   color: $w;
 }
-.ocean {
+.ocean-w {
   padding: 20px 20px;
 }
-.ocean {
+.ocean-w {
   display: block;
   margin: 0 auto;
   width: 190px;
@@ -482,7 +491,7 @@
   color: $b;
 }
 // asdsad
-.ocean {
+.ocean-w {
   overflow: hidden;
   width: 100%;
   border-bottom: 1px solid $b;
@@ -496,7 +505,7 @@
   display: flex;
   align-items: center;
 }
-.wave {
+.wave-w {
   background: url(../../images/comm/black/logo\ balck\ slide.png) repeat-x;
   // background-size: auto 100%;
   position: absolute;
