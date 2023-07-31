@@ -291,6 +291,8 @@ legend {
   overflow: clip;
 }
 .part-g .main-tg {
+  color: #fff;
+  font-size: 16px;
   margin: 40px 40px;
 }
 
@@ -390,10 +392,6 @@ legend {
   position: absolute;
   top: 0;
   left: 0;
-}
-
-.contents {
-  height: 300px;
 }
 
 .main_image {
@@ -1298,10 +1296,6 @@ legend {
   background: #000;
 }
 
-.contents {
-  height: 300px;
-}
-
 .collecion-slide-wrap section {
   display: flex;
   justify-content: center;
@@ -1356,7 +1350,7 @@ legend {
   align-items: center;
 }
 .collecion-slide-wrap .logo-ani .collec-wave {
-  background: url(../../images/contents/collection/saintlaurent-logo-slide-white.png) repeat-x;
+  background: url(../../images/comm/white/saintlaurent-logo-slide-white.png) repeat-x;
   position: absolute;
   z-index: 100;
   top: 13px;
@@ -1503,10 +1497,6 @@ legend {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.contents {
-  height: 300px;
 }
 
 #payment {
@@ -1868,6 +1858,9 @@ legend {
   left: 0;
   right: 0;
   z-index: 6000;
+}
+#header .header-w {
+  background: #fff;
 }
 #header .header-wrap {
   display: flex;
@@ -2273,11 +2266,11 @@ legend {
   color: #fff;
 }
 
-.ocean {
+.ocean-w {
   padding: 20px 20px;
 }
 
-.ocean {
+.ocean-w {
   display: block;
   margin: 0 auto;
   width: 190px;
@@ -2291,7 +2284,7 @@ legend {
   color: #000;
 }
 
-.ocean {
+.ocean-w {
   overflow: hidden;
   width: 100%;
   border-bottom: 1px solid #000;
@@ -2306,7 +2299,7 @@ legend {
   align-items: center;
 }
 
-.wave {
+.wave-w {
   background: url(../../images/comm/black/logo\ balck\ slide.png) repeat-x;
   position: absolute;
   z-index: 100;
