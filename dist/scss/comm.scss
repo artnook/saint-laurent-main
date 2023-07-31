@@ -325,7 +325,8 @@
 // footer
 #footer {
   position: relative;
-
+  padding-bottom: 70px;
+  background: $b;
   .lst-foot {
     li {
       display: flex;
@@ -427,7 +428,8 @@
 // footer 하얀색
 #footer-w {
   position: relative;
-
+  padding-bottom: 70px;
+  background: $w;
   .lst-foot {
     li {
       display: flex;
