@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import "variables", "mixin", "fonts", "reset", "main", "contents", "item-view",
-  "cart", "goods";
+  "cart", "goods", "introduce";
 
 // 공통
 .container {
@@ -124,7 +124,68 @@
       }
     }
   }
+  .container-intro {
+    background: $b;
+    .header-wrap-intro {
+      display: flex;
+      // position: fixed;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1000;
+      padding: 10px 0px;
+      // border-bottom: 1px solid #eee;
+      box-sizing: border-box;
+      background: $b;
+
+      #logo {
+        position: absolute;
+        // z-index: 1100;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 70px;
+        display: flex;
+        align-items: center;
+      }
+
+      #logo img {
+        height: 21px;
+        object-fit: contain;
+      }
+
+      .material-symbols-outlined {
+        // position: absolute;
+        display: inline-block;
+        font-size: 30px;
+        color: $w;
+      }
+
+      .inner {
+        // position: fixed;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 70px;
+        width: 100%;
+      }
+      .btn-g {
+        display: flex;
+        height: 70px;
+        align-items: center;
+        &::before {
+          font-size: 20px;
+          font-family: "Font Awesome 6 free";
+        }
+      }
+    }
+  }
 }
+
 .gnb-wrap {
   .input-burger {
     position: absolute;
@@ -337,6 +398,106 @@
 .wave {
   background: url(../../images/comm/white/saintlaurent-logo-slide-white.png)
     repeat-x;
+  // background-size: auto 100%;
+  position: absolute;
+  z-index: 100;
+  top: 13px;
+  width: 6400px;
+  height: 198px;
+  animation: wave 20s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+}
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+
+#footer-w {
+  position: relative;
+
+  .lst-foot {
+    li {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      border-bottom: 1px solid $b;
+      .iconbox {
+        border-bottom: 1px solid $w;
+      }
+    }
+    li:last-child {
+      border-bottom: 1px solid $w;
+    }
+  }
+  .lst-sns {
+    display: flex;
+    margin-right: -20px;
+    a {
+      display: flex;
+      align-items: center;
+      margin: 5px;
+    }
+  }
+  li {
+    position: relative;
+    padding: 5px;
+    color: $b;
+    align-items: center;
+  }
+  li:first-child {
+    position: relative;
+    padding: 5px;
+    color: $b;
+  }
+  .material-icons-outlined {
+    position: absolute;
+    display: inline-block;
+    margin-top: 4px;
+    font-size: 0.9rem;
+  }
+}
+.iconbox {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 10px;
+  color: $w;
+}
+.ocean {
+  padding: 20px 20px;
+}
+.ocean {
+  display: block;
+  margin: 0 auto;
+  width: 190px;
+  height: 20px;
+  flex-shrink: 0;
+}
+.li:first-child {
+  position: relative;
+  padding: 5px;
+  color: $b;
+}
+// asdsad
+.ocean {
+  overflow: hidden;
+  width: 100%;
+  border-bottom: 1px solid $b;
+  border-top: 1px solid $b;
+  margin-bottom: 40px;
+  padding: 0 0;
+  height: 50px;
+  top: 50%;
+  margin-top: 80px;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+}
+.wave {
+  background: url(../../images/comm/black/logo\ balck\ slide.png) repeat-x;
   // background-size: auto 100%;
   position: absolute;
   z-index: 100;
