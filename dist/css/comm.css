@@ -2118,6 +2118,8 @@ legend {
 
 #footer {
   position: relative;
+  padding-bottom: 70px;
+  background: #000;
 }
 #footer .lst-foot li {
   display: flex;
@@ -2219,6 +2221,8 @@ legend {
 }
 #footer-w {
   position: relative;
+  padding-bottom: 70px;
+  background: #fff;
 }
 #footer-w .lst-foot li {
   display: flex;
