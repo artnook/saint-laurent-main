@@ -207,7 +207,7 @@
   background: #000;
   border: none;
   margin: 0 auto 40px;
-  p {
+  .but-txt {
     font-family: $ro;
     font-weight: 700;
     font-size: 18px;
@@ -431,8 +431,8 @@
   display: none;
 }
 .modal-dimmed {
-  display: flex;
-  // display: none;
+  // display: flex;
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
