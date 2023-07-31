@@ -1254,6 +1254,46 @@ legend {
   transition: transform 0.3s;
 }
 
+#main {
+  padding-top: -70px;
+}
+#main img {
+  width: 100%;
+}
+
+.sec-introduce .txt-shopping__tit {
+  display: block;
+  margin: 50px 30px 0px;
+  color: #000;
+  /* Libre/h2-bold-24 */
+  font-family: Libre Baskerville;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 28.8px */
+}
+.sec-introduce .txt-shopping__desc {
+  display: block;
+  margin: 20px 30px 50px;
+  color: #000;
+  /* roboto-r/body3-14 */
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 16.8px */
+}
+
+.container p {
+  color: var(--black, #000);
+  /* roboto-r/caption-12 */
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 14.4px */
+}
+
 .container {
   padding: 0 4%;
 }
@@ -1360,6 +1400,58 @@ legend {
   align-items: center;
 }
 #header .header-wrap-b .btn-g::before {
+  font-size: 20px;
+  font-family: "Font Awesome 6 free";
+}
+#header .container-intro {
+  background: #000;
+}
+#header .container-intro .header-wrap-intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  padding: 10px 0px;
+  box-sizing: border-box;
+  background: #000;
+}
+#header .container-intro .header-wrap-intro #logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+#header .container-intro .header-wrap-intro #logo img {
+  height: 21px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#header .container-intro .header-wrap-intro .material-symbols-outlined {
+  display: inline-block;
+  font-size: 30px;
+  color: #fff;
+}
+#header .container-intro .header-wrap-intro .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+}
+#header .container-intro .header-wrap-intro .btn-g {
+  display: flex;
+  height: 70px;
+  align-items: center;
+}
+#header .container-intro .header-wrap-intro .btn-g::before {
   font-size: 20px;
   font-family: "Font Awesome 6 free";
 }
@@ -1555,6 +1647,107 @@ legend {
 
 .wave {
   background: url(../../images/comm/white/saintlaurent-logo-slide-white.png) repeat-x;
+  position: absolute;
+  z-index: 100;
+  top: 13px;
+  width: 6400px;
+  height: 198px;
+  animation: wave 20s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+#footer-w {
+  position: relative;
+}
+#footer-w .lst-foot li {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid #000;
+}
+#footer-w .lst-foot li .iconbox {
+  border-bottom: 1px solid #fff;
+}
+#footer-w .lst-foot li:last-child {
+  border-bottom: 1px solid #fff;
+}
+#footer-w .lst-sns {
+  display: flex;
+  margin-right: -20px;
+}
+#footer-w .lst-sns a {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+}
+#footer-w li {
+  position: relative;
+  padding: 5px;
+  color: #000;
+  align-items: center;
+}
+#footer-w li:first-child {
+  position: relative;
+  padding: 5px;
+  color: #000;
+}
+#footer-w .material-icons-outlined {
+  position: absolute;
+  display: inline-block;
+  margin-top: 4px;
+  font-size: 0.9rem;
+}
+
+.iconbox {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 10px;
+  color: #fff;
+}
+
+.ocean {
+  padding: 20px 20px;
+}
+
+.ocean {
+  display: block;
+  margin: 0 auto;
+  width: 190px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.li:first-child {
+  position: relative;
+  padding: 5px;
+  color: #000;
+}
+
+.ocean {
+  overflow: hidden;
+  width: 100%;
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #000;
+  margin-bottom: 40px;
+  padding: 0 0;
+  height: 50px;
+  top: 50%;
+  margin-top: 80px;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+}
+
+.wave {
+  background: url(../../images/comm/black/logo\ balck\ slide.png) repeat-x;
   position: absolute;
   z-index: 100;
   top: 13px;
