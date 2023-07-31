@@ -1,0 +1,44 @@
+#main {
+  padding-top: -70px;
+  img {
+    width: 100%;
+  }
+}
+.sec-introduce {
+  .txt-shopping__tit {
+    display: block;
+    margin: 50px $mz 0px;
+
+    color: #000;
+    /* Libre/h2-bold-24 */
+    font-family: Libre Baskerville;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 28.8px */
+  }
+  .txt-shopping__desc {
+    display: block;
+    margin: 20px $mz 50px;
+    // width: 334px;
+
+    color: #000;
+    /* roboto-r/body3-14 */
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 16.8px */
+  }
+}
+.container {
+  p {
+    color: var(--black, #000);
+    /* roboto-r/caption-12 */
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 14.4px */
+  }
+}
