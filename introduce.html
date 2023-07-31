@@ -29,6 +29,10 @@
     <meta name="twitter:domain" content="사이트 명" />
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
     <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
@@ -50,6 +54,7 @@
     <link rel="stylesheet" href="./dist/css/comm.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script defer src="./dist/js/include.js"></script>
     <script src="./dist/js/comm.js"></script>
   </head>
   <body>
@@ -61,38 +66,7 @@
     <style></style>
 
     <div class="wrap">
-      <header id="header" class="container">
-        <!-- 이너 -->
-        <div class="inner">
-          <!-- 유틸1 -->
-          <div class="util-1">
-            <ul class="lst-util">
-              <li>
-                <!-- a : 링크 연결 / button : 동작 처리  -->
-                <button class="btn-g btn-search">
-                  <span class="blind">검색</span>
-                </button>
-              </li>
-            </ul>
-          </div>
-          <!-- 로고 -->
-          <h1 id="logo">
-            <a href="#">
-              <img src="./images/logo.png" alt="logo" />
-            </a>
-          </h1>
-          <!-- 유틸2 -->
-          <div class="util-2">
-            <ul class="lst-util2">
-              <li>
-                <button class="btn-g btn-ham">
-                  <span class="blind">마이페이지</span>
-                </button>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </header>
+      <header data-include-path="./outline/header-b.html"></header>
       <div id="main" class="section">
         <section class="sec-introduce">
           <ul class="lst-introduce">
@@ -204,30 +178,35 @@
           <div class="wave"></div>
         </div>
         <div class="container">
-          <ul class="lst-foot">
+          <ul class="lst-foot foot-info">
             <li>
-              <p class="fp">
-                SHIPPING TO : REPUBLIC OF KOREA
-                <span class="material-icons-outlined"> chevron_right </span>
-              </p>
+              <span
+                >SHIPPING TO : REPUBLIC OF KOREA
+                <span class="material-icons-outlined arrow-icon">
+                  chevron_right
+                </span>
+              </span>
             </li>
             <li>
-              <p class="footerbox">
-                LANGUAGE : ENGLISH
-                <span class="material-icons-outlined"> chevron_right </span>
-              </p>
+              <span
+                >LANGUAGE : ENGLISH<span class="material-icons-outlined">
+                  chevron_right
+                </span></span
+              >
             </li>
-
             <li>
-              <p class="footerbox">
-                SOCIAL MEDIA
-                <span class="material-icons-outlined"> chevron_right </span>
-              </p>
+              <span
+                >SOCIAL MEDIA
+                <span class="material-icons-outlined">
+                  chevron_right
+                </span></span
+              >
+              <!-- sns 배경으로 넣기 -->
               <ul class="lst-sns">
                 <li class="iconbox">
                   <a href="https://www.facebook.com/ysl/?locale=ko_KR">
                     <img
-                      src="./images/Facebook_1_.png"
+                      src="./images/comm/black/Facebook_1_.png"
                       alt="SAINT LAURENT Facebook"
                     />
                   </a>
@@ -235,7 +214,7 @@
                 <li class="iconbox">
                   <a href="https://www.instagram.com/ysl/">
                     <img
-                      src="./images/Instagram_1_.png"
+                      src="./images/comm/black/Instagram_1_.png"
                       alt="SAINT LAURENT Instagram"
                     />
                   </a>
@@ -243,7 +222,7 @@
                 <li class="iconbox">
                   <a href="https://www.youtube.com/@yvessaintlaurent">
                     <img
-                      src="./images/YouTube_1_.png"
+                      src="./images/comm/black/YouTube_1_.png"
                       alt="SAINT LAURENT Youtube"
                     />
                   </a>
@@ -251,7 +230,7 @@
                 <li class="iconbox">
                   <a href="https://www.ysl.com/ko-kr">
                     <img
-                      src="./images/Twitter_1_.png"
+                      src="./images/comm/black/Twitter_1_.png"
                       alt="SAINT LAURENT Twitter"
                     />
                   </a>
@@ -259,29 +238,26 @@
               </ul>
             </li>
             <li>
-              <p class="footerbox">
-                NEWSLETTER
-                <span class="material-icons-outlined"> chevron_right </span>
-              </p>
+              <span
+                >NEWSLETTER<span class="material-icons-outlined">
+                  chevron_right
+                </span></span
+              >
             </li>
             <li>
-              <p class="footerbox">
-                BY CONTACTING CUSTOMER SERVICE, YOU CONSENT TO THE TRANSFER OF
-                YOUR PERSONAL INFORMATION ABROAD.
-              </p>
+              BY CONTACTING CUSTOMER SERVICE, YOU CONSENT TO THE TRANSFER OF
+              YOUR PERSONAL INFORMATION ABROAD.
             </li>
             <li>
-              <p class="footerbox">
-                YVES SAINT LAURENT KOREA LLC | BUSINESS REGISTRATION NO.
-                211-88-87468 ADDRESS OF THE COMPANY : 13F, 517, YEONGDONG-DAERO,
-                GANGNAM-GU, SEOUL, REPUBLIC OF KOREA | LEGAL NOTICE NAME OF
-                REPRESENTATIVE AS RECORDED IN THE BUSINESS REGISTRATION
-                CERTIFICATE : HIROFUMI TAMBO TELECOMMUNICATION REGISTRATION
-                NUMBER : 2022-서울강남-06159 ORGANIZATION WHO ISSUED
-                TELECOMMUNICAITON REGISTRATION NUMBER: SEOUL GANGNAM GU OFFICE
-                HOSTING SERVICE : SALESFORCE <br />
-                CUSTOMER CENTER : + 82 2-6105-2228
-              </p>
+              YVES SAINT LAURENT KOREA LLC | BUSINESS REGISTRATION NO.
+              211-88-87468 ADDRESS OF THE COMPANY : 13F, 517, YEONGDONG-DAERO,
+              GANGNAM-GU, SEOUL, REPUBLIC OF KOREA | LEGAL NOTICE NAME OF
+              REPRESENTATIVE AS RECORDED IN THE BUSINESS REGISTRATION
+              CERTIFICATE : HIROFUMI TAMBO TELECOMMUNICATION REGISTRATION NUMBER
+              : 2022-서울강남-06159 ORGANIZATION WHO ISSUED TELECOMMUNICAITON
+              REGISTRATION NUMBER: SEOUL GANGNAM GU OFFICE HOSTING SERVICE :
+              SALESFORCE <br />
+              CUSTOMER CENTER : + 82 2-6105-2228
             </li>
           </ul>
         </div>

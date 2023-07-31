@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import "variables", "fonts", "reset", "main", "contents";
+@import "variables", "fonts", "reset", "introduce", "main", "contents";
 
 // comm.css -
 // 공통요소 : 헤더, 풋터, 버튼, 아이콘, 박스
@@ -7,185 +7,324 @@
 //공통
 .container {
   padding: 0 $mz;
-  position: relative;
+}
+.wrap {
+  padding-top: 70px;
 }
 #header {
   position: fixed;
-  background: #000;
   top: 0;
   left: 0;
   right: 0;
-
-  #logo img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  .inner {
-    // position: fixed;
+  z-index: 6000;
+  background: #000;
+  .header-wrap {
     display: flex;
+    // position: fixed;
     justify-content: space-between;
     align-items: center;
-    height: 70px;
-  }
-  .btn-g {
-    height: 40px;
-    margin: -10%;
-    &::before {
-      font-size: 20px;
-      font-family: "Font Awesome 6 free";
-    }
-  }
-  .lst-util {
-    .btn-search::before {
-      content: "\f002";
-      font-family: "Font Awesome 6 free";
-      font-weight: 900;
-      padding: 5px;
-      color: #fff;
-    }
-  }
-  .lst-util2 {
-    .btn-ham::before {
-      content: "\f007";
-      margin: -10%;
-      font-family: "Font Awesome 6 free";
-      font-weight: 500;
-      color: #fff;
-    }
-  }
-}
-
-#main {
-  padding-top: 70px;
-  img {
+    position: relative;
+    top: 0;
+    left: 0;
     width: 100%;
-  }
-}
-.sec-introduce {
-  .txt-shopping__tit {
-    display: block;
-    margin: 50px $mz 0px;
+    height: 100%;
+    z-index: 1000;
+    padding: 10px 0px;
+    border-bottom: 1px solid #eee;
+    box-sizing: border-box;
+    background: $w;
 
-    color: #000;
-    /* Libre/h2-bold-24 */
-    font-family: Libre Baskerville;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 120%; /* 28.8px */
-  }
-  .txt-shopping__desc {
-    display: block;
-    margin: 20px $mz 50px;
-    // width: 334px;
+    #logo {
+      position: absolute;
+      // z-index: 1100;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
 
-    color: #000;
-    /* roboto-r/body3-14 */
-    font-family: Roboto;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 120%; /* 16.8px */
+    #logo img {
+      height: 21px;
+      object-fit: contain;
+    }
+
+    .material-symbols-outlined {
+      // position: absolute;
+      display: inline-block;
+      font-size: 30px;
+    }
+
+    .inner {
+      // position: fixed;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 70px;
+      width: 100%;
+    }
+    .btn-g {
+      height: 40px;
+      width: 70px;
+      &::before {
+        font-size: 20px;
+        font-family: "Font Awesome 6 free";
+      }
+    }
+  }
+  .header-wrap-b {
+    display: flex;
+    // position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    padding: 10px 0px;
+    // border-bottom: 1px solid #eee;
+    box-sizing: border-box;
+
+    #logo {
+      position: absolute;
+      // z-index: 1100;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 70px;
+      display: flex;
+      align-items: center;
+    }
+
+    #logo img {
+      height: 21px;
+      object-fit: contain;
+    }
+
+    .material-symbols-outlined {
+      // position: absolute;
+      display: inline-block;
+      font-size: 30px;
+      color: $w;
+    }
+
+    .inner {
+      // position: fixed;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 70px;
+      width: 100%;
+    }
+    .btn-g {
+      display: flex;
+      height: 70px;
+      align-items: center;
+      &::before {
+        font-size: 20px;
+        font-family: "Font Awesome 6 free";
+      }
+    }
   }
 }
-.container {
-  p {
-    color: var(--black, #000);
-    /* roboto-r/caption-12 */
-    font-family: Roboto;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 120%; /* 14.4px */
+.gnb-wrap {
+  .input-burger {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    &:checked {
+      // input이 선택됬을 때
+      & + label {
+        .bar {
+          background: $w;
+          &:nth-child(2) {
+            transform: rotate(45deg) translate(4px, 4px);
+          }
+          &:nth-child(3) {
+            // display: none;
+            opacity: 0;
+          }
+          &:nth-child(4) {
+            transform: rotate(-45deg) translate(6px, -6px);
+          }
+        }
+      }
+      & ~ #gnb {
+        left: 0;
+      }
+    }
+  }
+
+  .label-burger {
+    cursor: pointer;
+    position: relative;
+    z-index: 1100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40px;
+    height: $headerHight;
+    .bar {
+      display: block;
+      width: 26px;
+      height: 2px;
+      background: $w;
+      transition: all 0.3s;
+      // display none, block은 트렌지션 적용x
+      // 2개 이상 적용시 all -> 위치값 다시 적용
+    }
+    span {
+      &:nth-child(3) {
+        margin: 5px 0;
+      }
+    }
+  }
+  #gnb {
+    // display: none;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    bottom: 0;
+    width: 100%;
+    padding: 30px;
+    background: $b;
+    // rgba(0, 0, 0, 0.8)
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    // margin-left: 15px;
+    // padding-left: 18%;
+    transition: right 0.3s;
+    padding-left: 22.8%;
+    .gnb-wrap {
+      margin-left: 15%;
+    }
+    .gnb-logo img {
+      width: 204.67px;
+      margin-bottom: 70px;
+      padding-top: 6px;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+      }
+    }
+
+    li {
+      color: #ffffff;
+      line-height: 30px;
+    }
+    a {
+      color: $w;
+    }
   }
 }
+
 #footer {
   position: relative;
-  margin-bottom: 60px;
 
   .lst-foot {
-    > li {
+    li {
       display: flex;
       justify-content: space-between;
       width: 100%;
-      border-bottom: 1px solid #000;
+      border-bottom: 1px solid $b;
+      .iconbox {
+        border-bottom: 1px solid $w;
+      }
     }
-    > li:last-child {
-      border: 1px solid #ffffff;
+    li:last-child {
+      border-bottom: 1px solid $w;
     }
   }
   .lst-sns {
     display: flex;
+    margin-right: -20px;
     a {
       display: flex;
       align-items: center;
       margin: 5px;
     }
   }
-
-  .footerlogo {
-    padding: 20px 20px;
+  li {
+    position: relative;
+    padding: 5px;
+    color: $b;
+    align-items: center;
   }
-  .footerlogo img {
-    display: block;
-    margin: 0 auto;
-    width: 190px;
-    height: 20px;
-    flex-shrink: 0;
+  li:first-child {
+    position: relative;
+    padding: 5px;
+    color: $b;
   }
   .material-icons-outlined {
     position: absolute;
     display: inline-block;
+    margin-top: 4px;
     font-size: 0.9rem;
   }
-  .iconbox {
-    display: flex;
-    flex-direction: row-reverse;
-    margin-right: 10px;
+}
+.iconbox {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 10px;
+  color: $w;
+}
+.ocean {
+  padding: 20px 20px;
+}
+.ocean {
+  display: block;
+  margin: 0 auto;
+  width: 190px;
+  height: 20px;
+  flex-shrink: 0;
+}
+.li:first-child {
+  position: relative;
+  padding: 5px;
+  color: $b;
+}
+// asdsad
+.ocean {
+  overflow: hidden;
+  width: 100%;
+  border-bottom: 1px solid $b;
+  border-top: 1px solid $b;
+  margin-bottom: 40px;
+  padding: 0 0;
+  height: 50px;
+  top: 50%;
+  margin-top: 80px;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+}
+.wave {
+  background: url(../../images/comm/black/logo\ balck\ slide.png) repeat-x;
+  // background-size: auto 100%;
+  position: absolute;
+  z-index: 100;
+  top: 13px;
+  width: 6400px;
+  height: 198px;
+  animation: wave 20s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+}
+@keyframes wave {
+  0% {
+    margin-left: 0;
   }
-  .fp {
-    position: relative;
-    padding: 5px;
-  }
-  .footerbox {
-    position: relative;
-    padding: 5px;
-  }
-  .ocean {
-    overflow: hidden;
-    width: 100%;
-    border-bottom: 1px solid #000;
-    border-top: 1px solid #000;
-    margin-bottom: 40px;
-    padding: 0 0;
-    height: 50px;
-    top: 50%;
-    margin-top: 80px;
-    transform: translateY(-50%);
-    display: flex;
-    align-items: center;
-  }
-  .wave {
-    background: url(../../images/logo\ balck.png) repeat-x;
-    // background-size: auto 100%;
-    position: absolute;
-    z-index: 100;
-    top: 13px;
-    width: 6400px;
-    height: 198px;
-    animation: wave 20s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
-    transform: translate3d(0, 0, 0);
-  }
-
-  @keyframes wave {
-    0% {
-      margin-left: 0;
-    }
-    100% {
-      margin-left: -1600px;
-    }
+  100% {
+    margin-left: -1600px;
   }
 }
