@@ -1,0 +1,366 @@
+.contents {
+  height: 300px;
+}
+
+// main
+#payment {
+  margin-top: 70px;
+  padding: 30px 0px 0;
+  h3 {
+    font-family: "Libre Baskerville", serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+  }
+  .bd {
+    padding-top: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #000;
+  }
+  .orderinfo {
+    > p {
+      font-family: "Libre Baskerville", serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 120%;
+      margin-bottom: 40px;
+    }
+  }
+  .payment-form {
+    li {
+      margin-bottom: 30px;
+      label {
+        font-family: "Roboto";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+      }
+      input {
+        margin-top: 8px;
+        margin-bottom: 8px;
+        padding: 8px;
+        width: 80%;
+        height: 30px;
+        border-radius: 0%;
+        border: 1px solid #272727;
+      }
+      input:focus {
+        outline: none;
+        border-radius: 0%;
+        border: 1px solid #000000;
+        background: #ebebeb;
+      }
+      select {
+        margin-top: 8px;
+        margin-bottom: 8px;
+        margin-right: 8px;
+        width: 80%;
+        height: 30px;
+        border-radius: 0%;
+        border: 1px solid #272727;
+        background: #fff;
+      }
+      select:focus {
+        outline: none;
+        border-radius: 0%;
+        border: 1px solid #000000;
+        background: #ffffff;
+      }
+      option {
+        font-family: "Roboto";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+      }
+      p {
+        width: 100%;
+        color: #9a9a9a;
+        font-family: "Roboto";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+      }
+      .payment-zip {
+        width: 30%;
+      }
+      .payment-zipbutt {
+        margin-left: 10px;
+      }
+      .payment-addressset {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        width: 80%;
+        height: 30px;
+      }
+      .payment-cellphonewrap {
+        margin-top: 8px;
+        margin-bottom: 8px;
+        #cellphone {
+          width: 80px;
+        }
+        #cellphone2 {
+          width: 80px;
+        }
+        #cellphone3 {
+          width: 80px;
+        }
+      }
+      #payment-email {
+        width: 30%;
+      }
+      #payment-emailafter {
+        width: 30%;
+      }
+      #payment-emailselect {
+        width: 85px;
+        font-size: 12px;
+      }
+    }
+  }
+  .payment-caption {
+    margin-bottom: 70px;
+    p {
+      width: 100%;
+      color: #000000;
+      font-family: "Roboto";
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%;
+    }
+  }
+  // 결제 그룹
+  .payment-payment {
+    display: flex;
+    flex-direction: column;
+    .payment-wrap {
+      padding: 0 10%;
+      width: 100%;
+      ul {
+        margin-bottom: 15px;
+        li {
+          label {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+            img {
+              width: 40px;
+              height: 40px;
+            }
+            p {
+              font-family: "Roboto";
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 120%;
+              text-align: left;
+            }
+            input {
+              margin-left: 100px;
+              width: 10px;
+              height: 10px;
+              border: 1px solid #000;
+              border-radius: 50%;
+              background: #ffffff;
+              appearance: none;
+              &:focus {
+                width: 10px;
+                height: 10px;
+                background: #000;
+                border-radius: 50%;
+                appearance: none;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    // 카드 슬라이더
+    .payment-card {
+      padding-left: 20px;
+      margin-bottom: 30px;
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .swiper-slide {
+        width: 80%;
+      }
+      .swiper-slide:nth-child(2) {
+        opacity: 70%;
+      }
+      .swiper-slide:nth-child(3) {
+        opacity: 70%;
+      }
+    }
+  }
+
+  // 결제 상품 리스트
+  .payment-itemlist {
+    margin-bottom: 50px;
+    .payment-wool {
+      margin-top: 10px;
+      margin-bottom: 5px;
+      display: flex;
+      justify-content: space-between;
+      h3 {
+        font-family: "Roboto";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%;
+      }
+      p {
+        font-family: "Roboto";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+    .payment-bottom-text {
+      p {
+        margin-left: 10px;
+        font-family: "Roboto";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+      }
+    }
+  }
+  .payment-itemlist2 {
+    .payment-lambskin {
+      margin-top: 10px;
+      margin-bottom: 5px;
+      display: flex;
+      justify-content: space-between;
+      h3 {
+        font-family: "Roboto";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%;
+      }
+      p {
+        font-family: "Roboto";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+    .payment-bottom-text {
+      p {
+        margin-left: 10px;
+        font-family: "Roboto";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+      }
+    }
+  }
+
+  // 최종 결제 내역
+  .payment-totalpay {
+    padding-top: 10px;
+    .payment-subtotal {
+      margin-bottom: 17px;
+      display: flex;
+      justify-content: space-between;
+      h3 {
+        font-family: "Roboto";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+      }
+      p {
+        font-family: "Roboto";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+    .payment-tax {
+      margin-bottom: 17px;
+      display: flex;
+      justify-content: space-between;
+      h3 {
+        font-family: "Roboto";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+      }
+      p {
+        font-family: "Roboto";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+    .payment-total {
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: space-between;
+      h3 {
+        font-family: "Roboto";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%;
+      }
+      p {
+        font-family: "Roboto";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%;
+      }
+    }
+    .payment-paybutton {
+      width: 100%;
+      button {
+        margin-bottom: 20px;
+        width: 100%;
+        height: 52px;
+        background: #000;
+        color: #fff;
+        font-family: "Roboto";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+      }
+    }
+  }
+}
