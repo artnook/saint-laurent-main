@@ -1,0 +1,235 @@
+.wrap-collection {
+  background: $b;
+}
+
+// .collection-contents {
+//   height: 300px;
+// }
+// slide
+
+.collecion-slide-wrap {
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .collecion-video-main {
+    display: block;
+  }
+  .collecion-video-main video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .logo-ani {
+    width: 100%;
+    .collec-ocean {
+      padding: 20px 20px;
+    }
+    .collec-ocean {
+      display: block;
+      margin: 0 auto;
+      width: 190px;
+      height: 20px;
+      flex-shrink: 0;
+    }
+    .li:first-child {
+      position: relative;
+      padding: 5px;
+      color: $b;
+    }
+    // asdsad
+    .collec-ocean {
+      overflow: hidden;
+      width: 100%;
+      border-bottom: 1px solid $w;
+      border-top: 1px solid $w;
+      margin-bottom: 40px;
+      padding: 0 0;
+      height: 50px;
+      top: 50%;
+      margin-top: 80px;
+      transform: translateY(-50%);
+      display: flex;
+      align-items: center;
+    }
+    .collec-wave {
+      background: url(../../images/comm/white/saintlaurent-logo-slide-white.png)
+        repeat-x;
+      // background-size: auto 100%;
+      position: absolute;
+      z-index: 100;
+      top: 13px;
+      width: 6400px;
+      height: 198px;
+      animation: wave 20s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+      transform: translate3d(0, 0, 0);
+    }
+    @keyframes wave {
+      0% {
+        margin-left: 0;
+      }
+      100% {
+        margin-left: -1600px;
+      }
+    }
+  }
+
+  .collection-main-collec {
+    line-height: 0;
+    .collection-main-img {
+      width: 100%;
+      height: auto;
+      line-height: 0;
+    }
+  }
+
+  .swiper-slide-wrap {
+    .swiper {
+      width: 100%;
+      height: 80%;
+    }
+
+    .swiper-slide {
+      background: #000000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+.collection-sec-main {
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 50px;
+  .collection-sec-runway {
+    display: flex;
+    flex-direction: column;
+    line-height: 0;
+    div {
+      width: 100%;
+      height: auto;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .sec-img-slide {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    .div {
+      width: 100%;
+      height: 500px;
+    }
+    img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+    }
+  }
+}
+
+// 메인
+
+.collection-mainsection {
+  // padding-top: 70px;
+  .collection-fullver {
+    /*YOUTUBE VIDEO*/
+    .collection-youtube {
+      position: relative;
+      height: 700px;
+      background-color: #211f1f;
+      overflow: hidden;
+
+      .collection-youtube-area {
+        width: 1920px;
+        position: absolute;
+
+        /* 16비율 */
+        left: 50%;
+        margin-left: calc(1920px / -2);
+
+        /* 9비율 */
+        top: 50%;
+        margin-top: calc(1920px * 9 / 16 / -2);
+
+        &::before {
+          content: "";
+          display: block;
+          /* 16:9 영상 비율로 요소 크기 만들기! */
+          width: 100%;
+          height: 0;
+          padding-top: 56.25%;
+        }
+      }
+
+      .collection-youtube-cover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    #player {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  .collection-fullimg {
+    // main-full image
+    .collection-img-full {
+      padding-top: 70px;
+      img {
+        width: 100%;
+        margin-bottom: 70px;
+      }
+    }
+  }
+
+  .collection-celab-wrap {
+    width: 100%;
+    .collection-celab-list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 100%;
+      li {
+        width: 50%;
+        .collection-celab-list-box {
+          position: relative;
+          overflow: hidden;
+          width: 100%;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
