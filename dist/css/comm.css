@@ -921,9 +921,6 @@ legend {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Libre Baskerville";
-  font-size: 20px;
-  font-weight: 700;
   margin-bottom: 40px;
   color: #000;
 }
@@ -944,6 +941,11 @@ legend {
   font-size: 0px;
   line-height: 0px;
   margin: 0 0 0 10px;
+}
+.section-header h2 {
+  font-family: "Libre Baskerville";
+  font-size: 20px;
+  font-weight: 700;
 }
 
 .cart-product-section {
@@ -1049,7 +1051,7 @@ legend {
   font-size: 14px;
 }
 .cartGift-wrap .cartGift-txt-section .cgt1 {
-  margin-bottom: 20px;
+  line-height: 1.7;
 }
 
 .cartTotal-wrap {
@@ -1059,21 +1061,28 @@ legend {
 .cartTotal-wrap .cartTotal-content-wrap {
   padding-top: 40px;
 }
-.cartTotal-wrap .cartTotal-sec1 {
+.cartTotal-wrap .cartTotal-section {
+  padding-bottom: 20px;
+}
+.cartTotal-wrap .cartTotal-section .ct-sec1 {
   display: flex;
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 16px;
   justify-content: space-between;
   padding-bottom: 20px;
 }
-.cartTotal-wrap .cartTotal-sec2 {
+.cartTotal-wrap .cartTotal-section .ct-sec1 span {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+}
+.cartTotal-wrap .cartTotal-section .ct-sec2 {
   display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+.cartTotal-wrap .cartTotal-section .ct-sec2 span {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 18px;
-  justify-content: space-between;
-  padding-bottom: 40px;
 }
 .cartTotal-wrap .cartTotal-button {
   display: flex;
@@ -1108,18 +1117,22 @@ legend {
   color: #999;
 }
 .needHelp-wrap .material-icons-outlined {
+  display: block;
   font-size: 36px;
   color: rgba(0, 0, 0, 0.6);
   padding-bottom: 10px;
 }
-.needHelp-wrap .needHelpt-etc {
+.needHelp-wrap .needHelpt-etc .help-etc {
   display: flex;
   justify-content: space-around;
-}
-.needHelp-wrap .needHelpt-etc .help-etc {
   text-align: center;
 }
-.needHelp-wrap .needHelpt-etc .help-etc a {
+.needHelp-wrap .needHelpt-etc .help-etc .help-etc-sec {
+  text-align: center;
+  width: 20%;
+}
+.needHelp-wrap .needHelpt-etc .help-etc .help-etc-sec a {
+  text-align: center;
   font-family: "Roboto";
   font-weight: 400;
   font-size: 14px;
