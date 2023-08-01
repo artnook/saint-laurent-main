@@ -92,7 +92,6 @@
         border-bottom: 2px solid black;
         // border-bottom: 2px solid transparent;
       }
-      &.active,
       &:hover {
         opacity: 1;
         &::after {
@@ -218,7 +217,7 @@
   }
 }
 
-.product-information-tabs-container {
+.product-information-tabs {
   margin-bottom: 40px;
   box-sizing: border-box;
   .product-information-tabs {
@@ -289,6 +288,15 @@
     .details-1 > img:last-child {
       margin-bottom: 40px;
     }
+    .details-2 {
+      display: none;
+    }
+    .details-3 {
+      display: none;
+    }
+    .details-4 {
+      display: none;
+    }
   }
 }
 
@@ -324,11 +332,12 @@
   }
   .item-list {
     margin-bottom: 40px;
+    text-align: center;
     .item-list-txt {
       font-family: $ro;
       font-size: 14px;
       font-weight: 400;
-      text-align: center;
+      line-height: 1.5;
     }
   }
 }
@@ -427,97 +436,101 @@
     }
   }
 }
-.modal {
+
+.dimmed {
   display: none;
-}
-.modal-dimmed {
-  // display: flex;
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 10000;
-  background: rgb(0, 0, 0, 0.5);
-  align-items: flex-end;
-  .modal-wrap {
-    width: 100%;
-    margin-top: 580px;
-    padding: 15px 20px;
-    background: #ffffff;
-    border-radius: 10px 10px 0 0;
-    .modal-head {
-      display: flex;
-      justify-content: space-between;
-      border-bottom: 1px solid #000;
-      h3 {
-        font-family: $fl;
-        font-weight: 700;
-        font-size: 16px;
-        padding-bottom: 15px;
-      }
-      a {
-        span {
-          width: 40px;
-          height: 40px;
-          text-align: end;
+  &.open {
+    display: flex;
+  }
+  .modal-container {
+    display: flex;
+    // display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10000;
+    background: rgb(0, 0, 0, 0.5);
+    align-items: flex-end;
+    .modal-wrap {
+      width: 100%;
+      margin-top: 580px;
+      padding: 15px 20px;
+      background: #ffffff;
+      border-radius: 10px 10px 0 0;
+      .modal-head {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #000;
+        h3 {
+          font-family: $fl;
+          font-weight: 700;
+          font-size: 16px;
+          padding-bottom: 15px;
+        }
+        a {
+          span {
+            width: 40px;
+            height: 40px;
+            text-align: end;
+          }
         }
       }
-    }
-    .modal-main {
-      display: flex;
-      margin: 15px 0;
-      border-bottom: 1px solid #000;
-      .modal-img > img {
-        width: 110px;
-        height: 160px;
-        object-fit: cover;
-        margin: 0 15px 15px 0;
+      .modal-main {
+        display: flex;
+        margin: 15px 0;
+        border-bottom: 1px solid #000;
+        .modal-img > img {
+          width: 110px;
+          height: 160px;
+          object-fit: cover;
+          margin: 0 15px 15px 0;
+        }
+        .modal-txt {
+          margin-bottom: 10px;
+        }
+        .modal-element-title li:last-child {
+          margin: 0;
+        }
+        .modal1,
+        .modal2 {
+          font-family: $ro;
+          font-weight: 700;
+          font-size: 14px;
+        }
+        .modal3,
+        .modal4 {
+          font-family: $ro;
+          font-weight: 400;
+          font-size: 14px;
+        }
       }
-      .modal-txt {
-        margin-bottom: 10px;
-      }
-      .modal-element-title li:last-child {
-        margin: 0;
-      }
-      .modal1,
-      .modal2 {
-        font-family: $ro;
-        font-weight: 700;
-        font-size: 14px;
-      }
-      .modal3,
-      .modal4 {
-        font-family: $ro;
-        font-weight: 400;
-        font-size: 14px;
-      }
-    }
-    .modal-button {
-      display: flex;
-      width: 100%;
-      height: 45px;
-      // margin-bottom: 10px;
-      .shopping-bag {
-        text-align: center;
-        width: 50%;
-        background: white;
-        border: 1px solid #000;
-        font-family: $ro;
-        font-weight: 700;
-        font-size: 18px;
-        margin-right: 10px;
-        color: black;
-      }
-      .checkout {
-        width: 50%;
-        background: #000;
-        font-family: $ro;
-        font-weight: 700;
-        font-size: 18px;
-        a {
-          color: white;
+      .modal-button {
+        display: flex;
+        width: 100%;
+        height: 45px;
+        // margin-bottom: 10px;
+        .shopping-bag {
+          text-align: center;
+          width: 50%;
+          background: white;
+          border: 1px solid #000;
+          font-family: $ro;
+          font-weight: 700;
+          font-size: 18px;
+          margin-right: 10px;
+          color: black;
+        }
+        .checkout {
+          width: 50%;
+          background: #000;
+          font-family: $ro;
+          font-weight: 700;
+          font-size: 18px;
+          a {
+            color: white;
+          }
         }
       }
     }
