@@ -486,10 +486,10 @@ legend {
   opacity: 0;
   border-bottom: 2px solid black;
 }
-.color-options .color-picker label.active, .color-options .color-picker label:hover {
+.color-options .color-picker label:hover {
   opacity: 1;
 }
-.color-options .color-picker label.active::after, .color-options .color-picker label:hover::after {
+.color-options .color-picker label:hover::after {
   content: "";
   opacity: 1;
   border-color: rgb(0, 0, 0);
@@ -677,6 +677,15 @@ legend {
 }
 .de-image-resource .de-image-tab .details-1 > img:last-child {
   margin-bottom: 40px;
+}
+.de-image-resource .de-image-tab .details-2 {
+  display: none;
+}
+.de-image-resource .de-image-tab .details-3 {
+  display: none;
+}
+.de-image-resource .de-image-tab .details-4 {
+  display: none;
 }
 
 .product-information-item-list .item-list-header {
@@ -995,22 +1004,22 @@ legend {
 .cart-product-section .cart-button {
   display: flex;
   width: 100%;
-  height: 30px;
+  height: 52px;
 }
 .cart-product-section .cart-button .edit {
   width: 50%;
   margin-right: 10px;
   background: #000;
   font-family: "Roboto";
-  font-weight: 700;
-  font-size: 16px;
+  font-weight: 400;
+  font-size: 20px;
 }
 .cart-product-section .cart-button .remove {
   width: 50%;
   background: #000;
   font-family: "Roboto";
-  font-weight: 700;
-  font-size: 16px;
+  font-weight: 400;
+  font-size: 20px;
 }
 .cart-product-section .cart-button a {
   color: #fff;
@@ -1073,7 +1082,7 @@ legend {
 .cartTotal-wrap .cartTotal-button .cart-button-txt {
   color: white;
   font-family: "Roboto";
-  font-weight: 700;
+  font-weight: 400;
   font-size: 20px;
 }
 

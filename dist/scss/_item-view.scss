@@ -92,7 +92,6 @@
         border-bottom: 2px solid black;
         // border-bottom: 2px solid transparent;
       }
-      &.active,
       &:hover {
         opacity: 1;
         &::after {
@@ -288,6 +287,15 @@
     }
     .details-1 > img:last-child {
       margin-bottom: 40px;
+    }
+    .details-2 {
+      display: none;
+    }
+    .details-3 {
+      display: none;
+    }
+    .details-4 {
+      display: none;
     }
   }
 }
