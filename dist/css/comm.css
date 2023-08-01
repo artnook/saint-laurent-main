@@ -608,17 +608,17 @@ legend {
   margin: auto;
 }
 
-.product-information-tabs-container {
+.product-information-tabs {
   margin-bottom: 40px;
   box-sizing: border-box;
 }
-.product-information-tabs-container .product-information-tabs {
+.product-information-tabs .product-information-tabs {
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.product-information-tabs-container .product-information-tabs::after {
+.product-information-tabs .product-information-tabs::after {
   position: absolute;
   content: "";
   bottom: -10px;
@@ -628,7 +628,7 @@ legend {
   width: 100%;
   background: #999;
 }
-.product-information-tabs-container .product-information-tabs .details-tabs {
+.product-information-tabs .product-information-tabs .details-tabs {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -640,13 +640,13 @@ legend {
   font-weight: 400;
   font-family: "Libre Baskerville";
 }
-.product-information-tabs-container .product-information-tabs .on {
+.product-information-tabs .product-information-tabs .on {
   position: relative;
   font-family: "Libre Baskerville";
   font-size: 18px;
   font-weight: 700;
 }
-.product-information-tabs-container .product-information-tabs .on::after {
+.product-information-tabs .product-information-tabs .on::after {
   content: "";
   z-index: 1;
   position: absolute;
@@ -656,7 +656,7 @@ legend {
   height: 4px;
   background: #000;
 }
-.product-information-tabs-container .product-information-tabs-panel {
+.product-information-tabs .product-information-tabs-panel {
   display: flex;
   justify-content: center;
   font-family: "Roboto";
@@ -717,12 +717,13 @@ legend {
 }
 .product-information-item-list .item-list {
   margin-bottom: 40px;
+  text-align: center;
 }
 .product-information-item-list .item-list .item-list-txt {
   font-family: "Roboto";
   font-size: 14px;
   font-weight: 400;
-  text-align: center;
+  line-height: 1.5;
 }
 
 .recommendations-carousel-wrap .recommendations-carousel-header {
@@ -814,12 +815,14 @@ legend {
   margin: 0 0 0 10px;
 }
 
-.modal {
+.dimmed {
   display: none;
 }
-
-.modal-dimmed {
-  display: none;
+.dimmed.open {
+  display: flex;
+}
+.dimmed .modal-container {
+  display: flex;
   position: fixed;
   top: 0;
   left: 0;
@@ -829,65 +832,65 @@ legend {
   background: rgba(0, 0, 0, 0.5);
   align-items: flex-end;
 }
-.modal-dimmed .modal-wrap {
+.dimmed .modal-container .modal-wrap {
   width: 100%;
   margin-top: 580px;
   padding: 15px 20px;
   background: #ffffff;
   border-radius: 10px 10px 0 0;
 }
-.modal-dimmed .modal-wrap .modal-head {
+.dimmed .modal-container .modal-wrap .modal-head {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #000;
 }
-.modal-dimmed .modal-wrap .modal-head h3 {
+.dimmed .modal-container .modal-wrap .modal-head h3 {
   font-family: "Libre Baskerville";
   font-weight: 700;
   font-size: 16px;
   padding-bottom: 15px;
 }
-.modal-dimmed .modal-wrap .modal-head a span {
+.dimmed .modal-container .modal-wrap .modal-head a span {
   width: 40px;
   height: 40px;
   text-align: end;
 }
-.modal-dimmed .modal-wrap .modal-main {
+.dimmed .modal-container .modal-wrap .modal-main {
   display: flex;
   margin: 15px 0;
   border-bottom: 1px solid #000;
 }
-.modal-dimmed .modal-wrap .modal-main .modal-img > img {
+.dimmed .modal-container .modal-wrap .modal-main .modal-img > img {
   width: 110px;
   height: 160px;
   -o-object-fit: cover;
      object-fit: cover;
   margin: 0 15px 15px 0;
 }
-.modal-dimmed .modal-wrap .modal-main .modal-txt {
+.dimmed .modal-container .modal-wrap .modal-main .modal-txt {
   margin-bottom: 10px;
 }
-.modal-dimmed .modal-wrap .modal-main .modal-element-title li:last-child {
+.dimmed .modal-container .modal-wrap .modal-main .modal-element-title li:last-child {
   margin: 0;
 }
-.modal-dimmed .modal-wrap .modal-main .modal1,
-.modal-dimmed .modal-wrap .modal-main .modal2 {
+.dimmed .modal-container .modal-wrap .modal-main .modal1,
+.dimmed .modal-container .modal-wrap .modal-main .modal2 {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 14px;
 }
-.modal-dimmed .modal-wrap .modal-main .modal3,
-.modal-dimmed .modal-wrap .modal-main .modal4 {
+.dimmed .modal-container .modal-wrap .modal-main .modal3,
+.dimmed .modal-container .modal-wrap .modal-main .modal4 {
   font-family: "Roboto";
   font-weight: 400;
   font-size: 14px;
 }
-.modal-dimmed .modal-wrap .modal-button {
+.dimmed .modal-container .modal-wrap .modal-button {
   display: flex;
   width: 100%;
   height: 45px;
 }
-.modal-dimmed .modal-wrap .modal-button .shopping-bag {
+.dimmed .modal-container .modal-wrap .modal-button .shopping-bag {
   text-align: center;
   width: 50%;
   background: white;
@@ -898,14 +901,14 @@ legend {
   margin-right: 10px;
   color: black;
 }
-.modal-dimmed .modal-wrap .modal-button .checkout {
+.dimmed .modal-container .modal-wrap .modal-button .checkout {
   width: 50%;
   background: #000;
   font-family: "Roboto";
   font-weight: 700;
   font-size: 18px;
 }
-.modal-dimmed .modal-wrap .modal-button .checkout a {
+.dimmed .modal-container .modal-wrap .modal-button .checkout a {
   color: white;
 }
 
