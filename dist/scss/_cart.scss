@@ -95,21 +95,21 @@
   .cart-button {
     display: flex;
     width: 100%;
-    height: 30px;
+    height: 52px;
     .edit {
       width: 50%;
       margin-right: 10px;
       background: $b;
       font-family: $ro;
-      font-weight: 700;
-      font-size: 16px;
+      font-weight: 400;
+      font-size: 20px;
     }
     .remove {
       width: 50%;
       background: $b;
       font-family: $ro;
-      font-weight: 700;
-      font-size: 16px;
+      font-weight: 400;
+      font-size: 20px;
     }
     a {
       color: $w;
@@ -171,7 +171,7 @@
     .cart-button-txt {
       color: white;
       font-family: $ro;
-      font-weight: 700;
+      font-weight: 400;
       font-size: 20px;
     }
   }
