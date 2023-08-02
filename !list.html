@@ -105,11 +105,9 @@
         content: counter(count);
       }
 
-      .table td:nth-child(2),
-      .table td:nth-child(3),
-      .table td:nth-child(4),
-      .table td:nth-child(5) {
-        text-align: left;
+      .table td {
+        text-align: center;
+        vertical-align: middle;
       }
 
       .table tr .category {
@@ -204,7 +202,7 @@
           <dt>
             <span class="badge badge-dark">총 페이지수</span>
           </dt>
-          <dd id="totalPage">0</dd>
+          <dd id="totalPage">7</dd>
           <dt>
             <span class="badge badge-danger">완료</span>
           </dt>
@@ -222,7 +220,7 @@
                 aria-valuemin="0"
                 aria-valuemax="100"
               >
-                0%
+                100%
               </div>
             </div>
           </dd>
@@ -270,10 +268,8 @@
               <thead>
                 <tr>
                   <th>No</th>
-                  <th>1depth</th>
-                  <th>2depth</th>
-                  <th>3depth</th>
-                  <th>상세</th>
+                  <th>페이지</th>
+                  <th>담당자</th>
                   <th>파일명</th>
                   <th>Last update</th>
                   <th>Status</th>
@@ -287,82 +283,88 @@
 
                 <tr>
                   <td></td>
-                  <td>main</td>
-                  <td></td>
-                  <td></td>
-                  <td>gnb, nav, footer 추가</td>
-                  <td>index.html</td>
-                  <td>2023-01-06</td>
-                  <td>완료</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td></td>
                   <td>header</td>
-                  <td></td>
-                  <td></td>
-                  <td>header 모음</td>
-                  <td>sub/header.html</td>
-                  <td>2023-01-06</td>
+                  <td>최은지</td>
+                  <td>header-w.html, header-b.html, header-intro.html</td>
+                  <td>2023-08-04</td>
                   <td>완료</td>
-                  <td>모음이라 header가 2개 입니다.</td>
+                  <td>
+                    background : white_ver / black_ver / transparent_ver 구분
+                  </td>
                 </tr>
                 <tr>
                   <td></td>
-                  <td>무료강좌</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>coursefree-list.html</td>
-                  <td>2023-01-06</td>
+                  <td>main</td>
+                  <td>김태현</td>
+                  <td>index.html</td>
+                  <td>2023-08-04</td>
                   <td>완료</td>
                   <td></td>
                 </tr>
                 <tr>
                   <td></td>
-                  <td>이벤트 · 혜택</td>
-                  <td>이벤트</td>
-                  <td>글목록</td>
-                  <td></td>
-                  <td>event-list.html</td>
-                  <td>2023-01-06</td>
+                  <td>introduce</td>
+                  <td>김태현</td>
+                  <td>introduce.html</td>
+                  <td>2023-08-04</td>
                   <td>완료</td>
                   <td></td>
                 </tr>
                 <tr>
                   <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>Event</td>
-                  <td></td>
-                  <td>event-view.html</td>
-                  <td>2023-01-06</td>
+                  <td>collection</td>
+                  <td>최하린</td>
+                  <td>collection.html</td>
+                  <td>2023-08-04</td>
                   <td>완료</td>
                   <td></td>
                 </tr>
                 <tr>
                   <td></td>
-                  <td></td>
-                  <td>당첨자 발표</td>
-                  <td>글목록</td>
-                  <td></td>
-                  <td>winner-list.html</td>
-                  <td>2023-01-06</td>
+                  <td>goods</td>
+                  <td>최은지</td>
+                  <td>goods.html</td>
+                  <td>2023-08-04</td>
                   <td>완료</td>
                   <td></td>
                 </tr>
                 <tr>
                   <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>글목록 없음</td>
-                  <td></td>
-                  <td>winner-list-none.html</td>
-                  <td>2023-01-06</td>
+                  <td>itemview</td>
+                  <td>박진희</td>
+                  <td>item_view.html</td>
+                  <td>2023-08-04</td>
                   <td>완료</td>
                   <td></td>
                 </tr>
                 <tr>
+                  <td></td>
+                  <td>cart</td>
+                  <td>박진희</td>
+                  <td>cart.html</td>
+                  <td>2023-08-04</td>
+                  <td>완료</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>payment</td>
+                  <td>최하린</td>
+                  <td>payment.html</td>
+                  <td>2023-08-04</td>
+                  <td>완료</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>footer</td>
+                  <td>김태현</td>
+                  <td>footer.html, footer-w.html</td>
+                  <td>2023-08-04</td>
+                  <td>완료</td>
+                  <td>background : white_ver / black_ver 구분</td>
+                </tr>
+                <!-- <tr>
                   <td></td>
                   <td></td>
                   <td></td>
@@ -372,7 +374,7 @@
                   <td>2023-01-06</td>
                   <td></td>
                   <td></td>
-                </tr>
+                </tr> -->
               </tbody>
             </table>
           </div>
