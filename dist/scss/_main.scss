@@ -64,8 +64,8 @@
 .main-tg {
   color: #fff;
   text-align: center;
-  /* roboto-r/body1-18 */
-  font-family: Roboto;
+  /* $ro-r/body1-18 */
+  font-family: $ro;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -135,7 +135,7 @@
 .slide-t {
   color: #ffffff;
   text-align: center;
-  font-family: Libre Baskerville;
+  font-family: $fl;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -146,7 +146,7 @@
   text-decoration: underline;
   color: #ffffff;
   text-align: center;
-  font-family: Roboto;
+  font-family: $ro;
   font-size: 15px;
   font-style: normal;
   font-weight: 400;

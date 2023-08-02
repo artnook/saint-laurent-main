@@ -3,11 +3,7 @@
   height: 100%;
   display: block;
   background: #fff;
-  font-family:
-    Helvetica Neue,
-    Helvetica,
-    Arial,
-    sans-serif;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #000;
   margin: 0;
@@ -24,7 +20,7 @@
       padding-right: 10px;
       margin-bottom: 10px;
       text-align: center;
-      font-family: "Roboto";
+      font-family: $ro;
       font-size: 22px;
       font-style: normal;
       font-weight: 500;
@@ -49,7 +45,7 @@
       display: block;
       color: $b;
       text-align: center;
-      font-family: "Roboto";
+      font-family: $ro;
       font-size: 20px;
       font-style: normal;
       font-weight: 700;
@@ -59,7 +55,7 @@
     p {
       display: block;
       text-align: center;
-      font-family: "Roboto";
+      font-family: $ro;
       font-size: 16px;
       font-style: normal;
       font-weight: 400;
