@@ -8,9 +8,6 @@
   // flex-basis: 100%;
   justify-content: center;
   align-items: center;
-  font-family: $fl;
-  font-size: 20px;
-  font-weight: 700;
   margin-bottom: 40px;
   // padding: 0 20px;
   color: #000;
@@ -31,6 +28,11 @@
     font-size: 0px;
     line-height: 0px;
     margin: 0 0 0 10px;
+  }
+  h2 {
+    font-family: $fl;
+    font-size: 20px;
+    font-weight: 700;
   }
 }
 
@@ -135,7 +137,7 @@
     font-weight: 400;
     font-size: 14px;
     .cgt1 {
-      margin-bottom: 20px;
+      line-height: 1.7;
     }
   }
 }
@@ -146,21 +148,28 @@
   .cartTotal-content-wrap {
     padding-top: 40px;
   }
-  .cartTotal-sec1 {
-    display: flex;
-    font-family: $ro;
-    font-weight: 400;
-    font-size: 16px;
-    justify-content: space-between;
+  .cartTotal-section {
     padding-bottom: 20px;
-  }
-  .cartTotal-sec2 {
-    display: flex;
-    font-family: $ro;
-    font-weight: 700;
-    font-size: 18px;
-    justify-content: space-between;
-    padding-bottom: 40px;
+    .ct-sec1 {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 20px;
+      span {
+        font-family: $ro;
+        font-weight: 400;
+        font-size: 16px;
+      }
+    }
+    .ct-sec2 {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 20px;
+      span {
+        font-family: $ro;
+        font-weight: 700;
+        font-size: 18px;
+      }
+    }
   }
   .cartTotal-button {
     display: flex;
@@ -198,19 +207,25 @@
     }
   }
   .material-icons-outlined {
+    display: block;
     font-size: 36px;
     color: rgba($b, 0.6);
     padding-bottom: 10px;
   }
   .needHelpt-etc {
-    display: flex;
-    justify-content: space-around;
     .help-etc {
+      display: flex;
+      justify-content: space-around;
       text-align: center;
-      a {
-        font-family: $ro;
-        font-weight: 400;
-        font-size: 14px;
+      .help-etc-sec {
+        text-align: center;
+        width: 20%;
+        a {
+          text-align: center;
+          font-family: $ro;
+          font-weight: 400;
+          font-size: 14px;
+        }
       }
     }
     .divide-bar {

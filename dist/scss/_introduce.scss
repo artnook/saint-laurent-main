@@ -11,7 +11,7 @@
 
     color: #000;
     /* Libre/h2-bold-24 */
-    font-family: Libre Baskerville;
+    font-family: $fl;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
@@ -23,8 +23,8 @@
     // width: 334px;
 
     color: #000;
-    /* roboto-r/body3-14 */
-    font-family: Roboto;
+    /* $ro-r/body3-14 */
+    font-family: $ro;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -34,8 +34,8 @@
 .container {
   p {
     color: var(--black, #000);
-    /* roboto-r/caption-12 */
-    font-family: Roboto;
+    /* $ro-r/caption-12 */
+    font-family: $ro;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
