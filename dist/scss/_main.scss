@@ -22,7 +22,7 @@
 
 .main-container {
   margin-top: -70px;
-  background: #000;
+  background: $b;
 }
 .section-intro {
   z-index: -5;
@@ -62,7 +62,7 @@
 }
 
 .main-tg {
-  color: #fff;
+  color: $w;
   text-align: center;
   /* $ro-r/body1-18 */
   font-family: $ro;
@@ -120,7 +120,7 @@
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
+  background: $b;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -133,7 +133,7 @@
   object-fit: cover;
 }
 .slide-t {
-  color: #ffffff;
+  color: $w;
   text-align: center;
   font-family: $fl;
   font-size: 20px;
@@ -144,7 +144,7 @@
 }
 .slide-b {
   text-decoration: underline;
-  color: #ffffff;
+  color: $w;
   text-align: center;
   font-family: $ro;
   font-size: 15px;

@@ -349,7 +349,7 @@ legend {
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
+  background: #000;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -364,7 +364,7 @@ legend {
 }
 
 .slide-t {
-  color: #ffffff;
+  color: #fff;
   text-align: center;
   font-family: "Libre Baskerville";
   font-size: 20px;
@@ -376,7 +376,7 @@ legend {
 
 .slide-b {
   text-decoration: underline;
-  color: #ffffff;
+  color: #fff;
   text-align: center;
   font-family: "Roboto";
   font-size: 15px;
