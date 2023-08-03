@@ -1,6 +1,8 @@
 @charset "UTF-8";
-@import "variables", "mixin", "fonts", "reset", "main", "contents", "item-view",
-  "cart", "goods", "introduce", "collection", "payment";
+
+@import "variables", "mixin", "fonts", "reset", "main", "contents", "item-view", "cart", "goods-women", "goods-men", "introduce",
+  "collection", "payment";
+
 
 // 공통
 .container {
