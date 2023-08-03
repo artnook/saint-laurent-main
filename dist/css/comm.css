@@ -1352,11 +1352,12 @@ legend {
   height: 7px;
 }
 .itemlist .box-wrap .box1 {
-  background: #394230;
+  background: #fff;
+  border: 1px solid #000;
   margin-right: 6px;
 }
 .itemlist .box-wrap .box2 {
-  background: #334346;
+  background: #000;
   margin-right: 6px;
 }
 .itemlist .box-wrap .box3 {
