@@ -29,3 +29,29 @@ modalWrap.addEventListener("click", function (e) {
     modal.classList.remove("open");
   }
 });
+
+$(function () {
+  const sizeOp2 = $(".size-picker-tab .size");
+  const sizeTit = $(".size-tit");
+  // sizeOp2.removeClass("on");
+  sizeTit.on("click", function () {
+    sizeOp2.removeClass("on");
+    $(this).parent().addClass("on");
+  });
+
+  const fb = $(".cart-go-button");
+  const x = $(".item-list-header").offset();
+  fb.click(function () {
+    alert("Top: " + x.top + " Left: " + x.left);
+  });
+
+  $(".fb-h").click(function () {
+    $("html, body").animate(
+      {
+        scrollTop: 4563.53125,
+      },
+      500
+    );
+    return false;
+  });
+});

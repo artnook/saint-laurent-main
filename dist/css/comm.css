@@ -456,6 +456,15 @@ legend {
   height: 0;
   opacity: 0;
 }
+.color-options input[type=radio]:checked + label::after {
+  position: absolute;
+  content: " ";
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  opacity: 1;
+  border-bottom: 2px solid black;
+}
 .color-options .color-picker {
   display: flex;
   justify-content: space-between;
@@ -486,14 +495,6 @@ legend {
   opacity: 0;
   border-bottom: 2px solid black;
 }
-.color-options .color-picker label:hover {
-  opacity: 1;
-}
-.color-options .color-picker label:hover::after {
-  content: "";
-  opacity: 1;
-  border-color: rgb(0, 0, 0);
-}
 .color-options .color-picker span {
   display: block;
   width: 25px;
@@ -521,6 +522,15 @@ legend {
   font-weight: 400;
   font-size: 16px;
   text-align: center;
+}
+.color-options .color-picker-txt .color2 {
+  display: none;
+}
+.color-options .color-picker-txt .color3 {
+  display: none;
+}
+.color-options .color-picker-txt .color4 {
+  display: none;
 }
 
 .size-option {
