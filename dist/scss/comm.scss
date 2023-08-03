@@ -1,6 +1,8 @@
 @charset "UTF-8";
-@import "variables", "mixin", "fonts", "reset", "main", "contents", "item-view",
-  "cart", "goods", "introduce", "collection", "payment";
+
+@import "variables", "mixin", "fonts", "reset", "main", "contents", "item-view", "cart", "goods-women", "goods-men", "introduce",
+  "collection", "payment";
+
 
 // 공통
 .container {
@@ -77,6 +79,7 @@
       position: relative;
       height: 34px;
       margin-bottom: 10px;
+
       // border-bottom: 1px solid #fff;
     }
     .search input {
@@ -109,6 +112,7 @@
       margin: auto;
       transition: 0.4s;
       color: #fff;
+      cursor: pointer;
     }
     .search.focused .material-icons {
       opacity: 0;
@@ -171,6 +175,49 @@
         font-family: "Font Awesome 6 free";
       }
     }
+    // search
+    .search {
+      position: relative;
+      height: 34px;
+      margin-bottom: 10px;
+
+      // border-bottom: 1px solid #fff;
+    }
+    .search input {
+      opacity: 0;
+      width: 24px;
+      height: inherit;
+      padding: 4px 10px;
+      border: none; /* 테두리(border) 제거 */
+      border-bottom: 1px solid #ccc; /* 밑줄 스타일 설정 */
+      box-sizing: border-box;
+      outline: none;
+      color: #777;
+      font-size: 12px;
+      transition: width 0.4s;
+      background-color: transparent; /* 배경을 투명하게 설정 */
+      &:focus {
+        height: 34px;
+        width: 190px;
+        border-bottom: 1px solid #ffffff;
+        opacity: 1;
+      }
+    }
+
+    .search .material-icons {
+      height: 24px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 5px;
+      margin: auto;
+      transition: 0.4s;
+      color: #fff;
+      cursor: pointer;
+    }
+    .search.focused .material-icons {
+      opacity: 0;
+    }
   }
 
   .container-intro {
@@ -231,6 +278,49 @@
           font-family: "Font Awesome 6 free";
         }
       }
+      // search
+      .search {
+        position: relative;
+        height: 34px;
+        margin-bottom: 10px;
+
+        // border-bottom: 1px solid #fff;
+      }
+      .search input {
+        opacity: 0;
+        width: 24px;
+        height: inherit;
+        padding: 4px 10px;
+        border: none; /* 테두리(border) 제거 */
+        border-bottom: 1px solid #ccc; /* 밑줄 스타일 설정 */
+        box-sizing: border-box;
+        outline: none;
+        color: #777;
+        font-size: 12px;
+        transition: width 0.4s;
+        background-color: transparent; /* 배경을 투명하게 설정 */
+        &:focus {
+          height: 34px;
+          width: 190px;
+          border-bottom: 1px solid #ffffff;
+          opacity: 1;
+        }
+      }
+
+      .search .material-icons {
+        height: 24px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 5px;
+        margin: auto;
+        transition: 0.4s;
+        color: #fff;
+        cursor: pointer;
+      }
+      .search.focused .material-icons {
+        opacity: 0;
+      }
     }
   }
 }
@@ -262,6 +352,21 @@
           }
         }
         .bar-w {
+          background: $w;
+          &:nth-child(2) {
+            background: $w;
+            transform: rotate(45deg) translate(4px, 4px);
+          }
+          &:nth-child(3) {
+            // display: none;
+            opacity: 0;
+          }
+          &:nth-child(4) {
+            background: $w;
+            transform: rotate(-45deg) translate(6px, -6px);
+          }
+        }
+        .bar-intro {
           background: $w;
           &:nth-child(2) {
             background: $w;
@@ -334,6 +439,15 @@
       width: 26px;
       height: 2px;
       background: $b;
+      transition: all 0.3s;
+      // display none, block은 트렌지션 적용x
+      // 2개 이상 적용시 all -> 위치값 다시 적용
+    }
+    .bar-intro {
+      display: block;
+      width: 26px;
+      height: 2px;
+      background: $w;
       transition: all 0.3s;
       // display none, block은 트렌지션 적용x
       // 2개 이상 적용시 all -> 위치값 다시 적용
