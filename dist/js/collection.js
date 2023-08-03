@@ -28,7 +28,7 @@ function onYouTubePlayerAPIReady() {
 
 // Initialize Swiper
 var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 4,
+  slidesPerView: 2,
   spaceBetween: 2,
   scrollbar: {
     el: ".swiper-scrollbar",

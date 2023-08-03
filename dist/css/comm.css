@@ -349,7 +349,7 @@ legend {
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
+  background: #000;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -364,7 +364,7 @@ legend {
 }
 
 .slide-t {
-  color: #ffffff;
+  color: #fff;
   text-align: center;
   font-family: "Libre Baskerville";
   font-size: 20px;
@@ -376,7 +376,7 @@ legend {
 
 .slide-b {
   text-decoration: underline;
-  color: #ffffff;
+  color: #fff;
   text-align: center;
   font-family: "Roboto";
   font-size: 15px;
@@ -1124,12 +1124,12 @@ legend {
 }
 .needHelp-wrap .needHelpt-etc .help-etc {
   display: flex;
-  justify-content: space-around;
   text-align: center;
 }
 .needHelp-wrap .needHelpt-etc .help-etc .help-etc-sec {
+  position: relative;
   text-align: center;
-  width: 20%;
+  width: 33.3333%;
 }
 .needHelp-wrap .needHelpt-etc .help-etc .help-etc-sec a {
   text-align: center;
@@ -1137,10 +1137,151 @@ legend {
   font-weight: 400;
   font-size: 14px;
 }
-.needHelp-wrap .needHelpt-etc .divide-bar {
-  width: 2px;
-  height: 100px;
+.needHelp-wrap .needHelpt-etc .help-etc .help-etc-sec::before {
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 1px;
   background: #eee;
+}
+.needHelp-wrap .needHelpt-etc .help-etc .find-store-wrap::before {
+  display: none;
+}
+
+.itemlst-wrap {
+  position: relative;
+  height: 100%;
+  display: block;
+  background: #fff;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.itemlist {
+  margin-top: 50px;
+}
+.itemlist .tit li {
+  display: inline-block;
+  font-size: 20px;
+  padding-right: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  color: #000;
+}
+.itemlist .list {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.itemlist .list img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.itemlist .lst-txt a {
+  display: block;
+  color: #000;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  margin-bottom: 5px;
+}
+.itemlist .lst-txt p {
+  display: block;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+.itemlist .box-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+}
+.itemlist .box-wrap .box {
+  width: 26px;
+  height: 7px;
+}
+.itemlist .box-wrap .box1 {
+  background: #394230;
+  margin-right: 6px;
+}
+.itemlist .box-wrap .box2 {
+  background: #334346;
+  margin-right: 6px;
+}
+.itemlist .box-wrap .box3 {
+  background: #c287b0;
+  margin-right: 6px;
+}
+.itemlist .box-wrap .box4 {
+  background: #a1942b;
+  margin-right: 6px;
+}
+.itemlist .box-wrap .box5 {
+  background: #000000;
+}
+.itemlist .box-wrap .box6 {
+  background: #4b2227;
+  margin-right: 6px;
+}
+.itemlist .box-wrap .box7 {
+  background: #e2c98e;
+}
+.itemlist .box-wrap .box8 {
+  background: #ac946f;
+}
+.itemlist .box-wrap .box9 {
+  background: #000000;
+  margin-right: 6px;
+}
+.itemlist .swiper {
+  width: 100%;
+  height: 100%;
+}
+.itemlist .swiper-slide {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+}
+.itemlist .swiper-slide::before {
+  content: "";
+  display: block;
+  height: 0;
+  padding-top: 160%;
+}
+.itemlist .swiper-slide img {
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+  transition: transform 0.3s;
 }
 
 .itemlst-wrap {
@@ -1933,6 +2074,45 @@ legend {
   font-size: 20px;
   font-family: "Font Awesome 6 free";
 }
+#header .header-wrap .search {
+  position: relative;
+  height: 34px;
+  margin-bottom: 10px;
+}
+#header .header-wrap .search input {
+  opacity: 0;
+  width: 24px;
+  height: inherit;
+  padding: 4px 10px;
+  border: none; /* 테두리(border) 제거 */
+  border-bottom: 1px solid #ccc; /* 밑줄 스타일 설정 */
+  box-sizing: border-box;
+  outline: none;
+  color: #777;
+  font-size: 12px;
+  transition: width 0.4s;
+  background-color: transparent; /* 배경을 투명하게 설정 */
+}
+#header .header-wrap .search input:focus {
+  height: 34px;
+  width: 190px;
+  border-bottom: 1px solid #ffffff;
+  opacity: 1;
+}
+#header .header-wrap .search .material-icons {
+  height: 24px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 5px;
+  margin: auto;
+  transition: 0.4s;
+  color: #fff;
+  cursor: pointer;
+}
+#header .header-wrap .search.focused .material-icons {
+  opacity: 0;
+}
 #header .header-wrap-b {
   display: flex;
   justify-content: space-between;
@@ -1980,6 +2160,45 @@ legend {
 #header .header-wrap-b .btn-g::before {
   font-size: 20px;
   font-family: "Font Awesome 6 free";
+}
+#header .header-wrap-b .search {
+  position: relative;
+  height: 34px;
+  margin-bottom: 10px;
+}
+#header .header-wrap-b .search input {
+  opacity: 0;
+  width: 24px;
+  height: inherit;
+  padding: 4px 10px;
+  border: none; /* 테두리(border) 제거 */
+  border-bottom: 1px solid #ccc; /* 밑줄 스타일 설정 */
+  box-sizing: border-box;
+  outline: none;
+  color: #777;
+  font-size: 12px;
+  transition: width 0.4s;
+  background-color: transparent; /* 배경을 투명하게 설정 */
+}
+#header .header-wrap-b .search input:focus {
+  height: 34px;
+  width: 190px;
+  border-bottom: 1px solid #ffffff;
+  opacity: 1;
+}
+#header .header-wrap-b .search .material-icons {
+  height: 24px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 5px;
+  margin: auto;
+  transition: 0.4s;
+  color: #fff;
+  cursor: pointer;
+}
+#header .header-wrap-b .search.focused .material-icons {
+  opacity: 0;
 }
 #header .container-intro {
   background: #000;
@@ -2033,6 +2252,45 @@ legend {
   font-size: 20px;
   font-family: "Font Awesome 6 free";
 }
+#header .container-intro .header-wrap-intro .search {
+  position: relative;
+  height: 34px;
+  margin-bottom: 10px;
+}
+#header .container-intro .header-wrap-intro .search input {
+  opacity: 0;
+  width: 24px;
+  height: inherit;
+  padding: 4px 10px;
+  border: none; /* 테두리(border) 제거 */
+  border-bottom: 1px solid #ccc; /* 밑줄 스타일 설정 */
+  box-sizing: border-box;
+  outline: none;
+  color: #777;
+  font-size: 12px;
+  transition: width 0.4s;
+  background-color: transparent; /* 배경을 투명하게 설정 */
+}
+#header .container-intro .header-wrap-intro .search input:focus {
+  height: 34px;
+  width: 190px;
+  border-bottom: 1px solid #ffffff;
+  opacity: 1;
+}
+#header .container-intro .header-wrap-intro .search .material-icons {
+  height: 24px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 5px;
+  margin: auto;
+  transition: 0.4s;
+  color: #fff;
+  cursor: pointer;
+}
+#header .container-intro .header-wrap-intro .search.focused .material-icons {
+  opacity: 0;
+}
 
 .gnb-wrap .input-burger {
   position: absolute;
@@ -2070,8 +2328,40 @@ legend {
   background: #fff;
   transform: rotate(-45deg) translate(6px, -6px);
 }
+.gnb-wrap .input-burger:checked + label .bar-intro {
+  background: #fff;
+}
+.gnb-wrap .input-burger:checked + label .bar-intro:nth-child(2) {
+  background: #fff;
+  transform: rotate(45deg) translate(4px, 4px);
+}
+.gnb-wrap .input-burger:checked + label .bar-intro:nth-child(3) {
+  opacity: 0;
+}
+.gnb-wrap .input-burger:checked + label .bar-intro:nth-child(4) {
+  background: #fff;
+  transform: rotate(-45deg) translate(6px, -6px);
+}
 .gnb-wrap .input-burger:checked ~ #gnb {
   left: 0;
+}
+.gnb-wrap .gnb-sns {
+  margin-top: 15px;
+  display: flex;
+  width: 100px;
+  justify-content: space-between;
+}
+.gnb-wrap .gnb-sns img {
+  scale: 1.2;
+  margin-right: 25px;
+}
+.gnb-wrap .depth1 {
+  padding-bottom: 70px;
+  border-bottom: 1px solid #fff;
+}
+.gnb-wrap .depth1 a {
+  font-size: 19px;
+  line-height: 2;
 }
 .gnb-wrap .label-burger {
   cursor: pointer;
@@ -2096,6 +2386,13 @@ legend {
   width: 26px;
   height: 2px;
   background: #000;
+  transition: all 0.3s;
+}
+.gnb-wrap .label-burger .bar-intro {
+  display: block;
+  width: 26px;
+  height: 2px;
+  background: #fff;
   transition: all 0.3s;
 }
 .gnb-wrap .label-burger span:nth-child(3) {
@@ -2139,6 +2436,16 @@ legend {
 }
 .gnb-wrap #gnb a {
   color: #fff;
+}
+.gnb-wrap #gnb .depth1 {
+  margin-bottom: 0px;
+  border-bottom: 1px solid #ffffff;
+  font-size: 20px;
+}
+.gnb-wrap #gnb .depth2 a {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 15px;
 }
 
 #footer {
