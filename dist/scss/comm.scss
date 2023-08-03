@@ -1,6 +1,6 @@
 @charset "UTF-8";
-@import "variables", "mixin", "fonts", "reset", "main", "contents", "item-view", "cart", "goods", "introduce",
-  "collection", "payment";
+@import "variables", "mixin", "fonts", "reset", "main", "contents", "item-view",
+  "cart", "goods", "introduce", "collection", "payment";
 
 // 공통
 .container {
@@ -483,7 +483,8 @@
   align-items: center;
 }
 .wave {
-  background: url(../../images/comm/white/saintlaurent-logo-slide-white.png) repeat-x;
+  background: url(../../images/comm/white/saintlaurent-logo-slide-white.png)
+    repeat-x;
   // background-size: auto 100%;
   position: absolute;
   z-index: 100;
