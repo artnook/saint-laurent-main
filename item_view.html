@@ -123,10 +123,10 @@
                 </label>
               </div>
               <div class="color-picker-txt">
-                <span class="colortxt color1">COLOR : BLACK</span>
-                <span class="colortxt color2">COLOR : BLANC VINTAGE</span>
+                <span id="color1" class="colortxt color1">COLOR : BLACK</span>
+                <!-- <span class="colortxt color2">COLOR : BLANC VINTAGE</span>
                 <span class="colortxt color3">COLOR : STORM</span>
-                <span class="colortxt color4">COLOR : DARK BAIGE</span>
+                <span class="colortxt color4">COLOR : DARK BAIGE</span> -->
               </div>
             </div>
             <!-- 사이즈 -->
@@ -146,15 +146,7 @@
                 </div>
               </div>
             </div>
-            <!-- <script>
-              const sizeOp2 = $(".size-picker-tab .size");
-              const sizeTit = $(".size-tit");
-              // sizeOp2.removeClass("on");
-              sizeTit.on("click", function () {
-                sizeOp2.removeClass("on");
-                $(this).parent().addClass("on");
-              });
-            </script> -->
+
             <!-- 장바구니 버튼 -->
             <button class="cart-go-button">
               <p class="but-txt">ADD TO CART</p>
@@ -264,11 +256,8 @@
             </div>
           </section>
           <!-- 상품 소재, 크기, 생산지 -->
-          <section class="product-information-item-list container">
-            <h2 class="item-list-header">
-              FABRIC&CARE
-              <a name="tab2"></a>
-            </h2>
+          <section id="tab2" class="product-information-item-list container">
+            <h2 class="item-list-header">FABRIC&CARE</h2>
             <div class="item-list">
               <span class="item-list-txt">
                 CHROME FREE, METAL FREE TANNED LEATHER AND ORGANIC COTTON LINING

@@ -39,19 +39,33 @@ $(function () {
     $(this).parent().addClass("on");
   });
 
-  const fb = $(".cart-go-button");
-  const x = $(".item-list-header").offset();
-  fb.click(function () {
-    alert("Top: " + x.top + " Left: " + x.left);
+  const gnbEl = document.querySelectorAll(".item-list-header a, .fb-h a");
+
+  gnbEl.forEach(function (el) {
+    el.addEventListener("click", function (e) {
+      e.preventDefault();
+      const href = this.getAttribute("href");
+      const offsetTop = document.querySelector(href).offsetTop - 100;
+
+      scroll({
+        top: offsetTop,
+        behavior: "smooth",
+      });
+    });
   });
 
-  $(".fb-h").click(function () {
-    $("html, body").animate(
-      {
-        scrollTop: 4563.53125,
-      },
-      500
-    );
-    return false;
-  });
+  // tab
+});
+
+document.getElementById("black").addEventListener("click", function () {
+  document.getElementById("color1").innerHTML = "COLOR : BLACK";
+});
+document.getElementById("blancvintage").addEventListener("click", function () {
+  document.getElementById("color1").innerHTML = "COLOR : BLANCVINTAGE";
+});
+document.getElementById("storm").addEventListener("click", function () {
+  document.getElementById("color1").innerHTML = "COLOR : STORM";
+});
+document.getElementById("darkbaige").addEventListener("click", function () {
+  document.getElementById("color1").innerHTML = "COLOR : DARK BAIGE";
 });
