@@ -12,7 +12,7 @@
 - 김태현: main, introduce, footer
 - 박진희: item-view, cart
 - 최은지: goods, header
-- 최하린: collection, payment
+- 최하린: collection, collection-woman, payment
 
 ## 사용기술
 
