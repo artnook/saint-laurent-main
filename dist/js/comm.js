@@ -18,3 +18,23 @@ searchInputEl.addEventListener("blur", function () {
   searchEl.classList.remove("focused");
   searchInputEl.setAttribute("placeholder", "");
 });
+
+$(function () {
+  // tabs
+  const tabEl = $(".tab-item");
+  const tabTit = tabEl.find(".tit");
+
+  // tab-item 옆 .on 삭제
+  tabEl.removeClass("on");
+  // .tab-item:first-child에게 .on 추가
+  // $(".tab-item:first-child").addClass("on");
+  tabEl.first().addClass("on");
+
+  // .tab-item .tit을 클릭했을 때
+  tabTit.on("click", function () {
+    // .tab-item .on 삭제
+    tabEl.removeClass("on");
+    // 방금 클릭한 나(this)의 부모(parent()에게 .on 추가
+    $(this).parents().addClass("on");
+  });
+});
