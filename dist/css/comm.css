@@ -514,14 +514,11 @@ legend {
 }
 .color-options .color-picker-txt {
   display: block;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
   font-family: "Roboto";
   font-weight: 400;
   font-size: 16px;
   text-align: center;
+  margin-top: 20px;
 }
 .color-options .color-picker-txt .color2 {
   display: none;
