@@ -29,3 +29,43 @@ modalWrap.addEventListener("click", function (e) {
     modal.classList.remove("open");
   }
 });
+
+$(function () {
+  const sizeOp2 = $(".size-picker-tab .size");
+  const sizeTit = $(".size-tit");
+  // sizeOp2.removeClass("on");
+  sizeTit.on("click", function () {
+    sizeOp2.removeClass("on");
+    $(this).parent().addClass("on");
+  });
+
+  const gnbEl = document.querySelectorAll(".item-list-header a, .fb-h a");
+
+  gnbEl.forEach(function (el) {
+    el.addEventListener("click", function (e) {
+      e.preventDefault();
+      const href = this.getAttribute("href");
+      const offsetTop = document.querySelector(href).offsetTop - 100;
+
+      scroll({
+        top: offsetTop,
+        behavior: "smooth",
+      });
+    });
+  });
+
+  // tab
+});
+
+document.getElementById("black").addEventListener("click", function () {
+  document.getElementById("color1").innerHTML = "COLOR : BLACK";
+});
+document.getElementById("blancvintage").addEventListener("click", function () {
+  document.getElementById("color1").innerHTML = "COLOR : BLANCVINTAGE";
+});
+document.getElementById("storm").addEventListener("click", function () {
+  document.getElementById("color1").innerHTML = "COLOR : STORM";
+});
+document.getElementById("darkbaige").addEventListener("click", function () {
+  document.getElementById("color1").innerHTML = "COLOR : DARK BAIGE";
+});

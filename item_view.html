@@ -61,6 +61,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script defer src="./dist/js/include.js"></script>
+    <script defer src="./dist/js/jquery-3.5.1.min.js"></script>
     <script defer src="./dist/js/item_view.js"></script>
     <script defer src="./dist/js/comm.js"></script>
   </head>
@@ -104,28 +105,28 @@
             <!-- 색상  -->
             <div class="color-options">
               <div class="color-picker">
-                <input type="radio" name="color" id="black" />
+                <input type="radio" name="color" id="black" checked />
                 <label for="black" class="active">
                   <span class="black"></span>
                 </label>
                 <input type="radio" name="color" id="blancvintage" />
-                <label for="blancvintage">
+                <label for="blancvintage" class="">
                   <span class="blancvintage"></span>
                 </label>
                 <input type="radio" name="color" id="storm" />
-                <label for="storm">
+                <label for="storm" class="">
                   <span class="storm"></span>
                 </label>
                 <input type="radio" name="color" id="darkbaige" />
-                <label for="darkbaige">
+                <label for="darkbaige" class="">
                   <span class="darkbaige"></span>
                 </label>
               </div>
               <div class="color-picker-txt">
-                <span class="colortxt color1">COLOR : BLACK</span>
-                <!-- <p class="colortxt color2">COLOR : BLANC VINTAGE</p>
-                <p class="colortxt color3">COLOR : STORM</p>
-                <p class="colortxt color4">COLOR : DARK BAIGE</p> -->
+                <span id="color1" class="colortxt color1">COLOR : BLACK</span>
+                <!-- <span class="colortxt color2">COLOR : BLANC VINTAGE</span>
+                <span class="colortxt color3">COLOR : STORM</span>
+                <span class="colortxt color4">COLOR : DARK BAIGE</span> -->
               </div>
             </div>
             <!-- 사이즈 -->
@@ -133,10 +134,10 @@
               <div class="size-picker">
                 <ul class="size-picker-tab">
                   <li class="size size-tab1">
-                    <a href="#">SMALL</a>
+                    <a href="javascript:void(0);" class="size-tit">SMALL</a>
                   </li>
                   <li class="size size-tab2 on">
-                    <a href="#">MEDIUM</a>
+                    <a href="javascript:void(0);" class="size-tit">MEDIUM</a>
                   </li>
                 </ul>
                 <div class="size-delivery">
@@ -145,6 +146,7 @@
                 </div>
               </div>
             </div>
+
             <!-- 장바구니 버튼 -->
             <button class="cart-go-button">
               <p class="but-txt">ADD TO CART</p>
@@ -155,13 +157,13 @@
             <div class="product-information-tabs">
               <ul class="product-information-tabs">
                 <li class="details-tabs on">
-                  <a href="#">PRODUCT DETAILS</a>
+                  <a href="javascript:void(0);">PRODUCT DETAILS</a>
                 </li>
-                <li class="details-tabs">
+                <li class="details-tabs fb-h">
                   <a href="#tab2">FABRIC & CARE</a>
                 </li>
                 <li class="details-tabs">
-                  <a href="#">FIND IN STORES</a>
+                  <a href="javascript:void(0);">FIND IN STORES</a>
                 </li>
               </ul>
               <div class="product-information-tabs-panel">
@@ -254,11 +256,8 @@
             </div>
           </section>
           <!-- 상품 소재, 크기, 생산지 -->
-          <section class="product-information-item-list container">
-            <h2 class="item-list-header">
-              FABRIC&CARE
-              <a name="tab2"></a>
-            </h2>
+          <section id="tab2" class="product-information-item-list container">
+            <h2 class="item-list-header">FABRIC&CARE</h2>
             <div class="item-list">
               <span class="item-list-txt">
                 CHROME FREE, METAL FREE TANNED LEATHER AND ORGANIC COTTON LINING
