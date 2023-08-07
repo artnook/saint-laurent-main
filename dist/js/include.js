@@ -15,3 +15,10 @@ window.addEventListener("load", function () {
     }
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const sizeOp2 = document.querySelectorAll(".depth1");
+  sizeOp2.forEach(function (element) {
+    element.classList.add("on");
+  });
+});

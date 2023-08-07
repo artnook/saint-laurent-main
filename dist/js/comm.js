@@ -19,12 +19,7 @@
 // //   searchInputEl.setAttribute("placeholder", "");
 // // });
 
-// $(function () {
-//   const sizeOp2 = $(". .size");
-//   const sizeTit = $(".size-tit");
-//   sizeOp2.removeClass("on");
-//   // sizeTit.on("click", function () {
-//   //   sizeOp2.removeClass("on");
-//   //   $(this).parent().addClass("on");
-//   // });
-// });
+$(function () {
+  const sizeOp2 = $("depth1");
+  sizeOp2.removeClass("on");
+});
