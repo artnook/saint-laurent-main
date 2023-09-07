@@ -456,6 +456,15 @@ legend {
   height: 0;
   opacity: 0;
 }
+.color-options input[type=radio]:checked + label::after {
+  position: absolute;
+  content: " ";
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  opacity: 1;
+  border-bottom: 2px solid black;
+}
 .color-options .color-picker {
   display: flex;
   justify-content: space-between;
@@ -486,14 +495,6 @@ legend {
   opacity: 0;
   border-bottom: 2px solid black;
 }
-.color-options .color-picker label:hover {
-  opacity: 1;
-}
-.color-options .color-picker label:hover::after {
-  content: "";
-  opacity: 1;
-  border-color: rgb(0, 0, 0);
-}
 .color-options .color-picker span {
   display: block;
   width: 25px;
@@ -513,14 +514,20 @@ legend {
 }
 .color-options .color-picker-txt {
   display: block;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
   font-family: "Roboto";
   font-weight: 400;
   font-size: 16px;
   text-align: center;
+  margin-top: 20px;
+}
+.color-options .color-picker-txt .color2 {
+  display: none;
+}
+.color-options .color-picker-txt .color3 {
+  display: none;
+}
+.color-options .color-picker-txt .color4 {
+  display: none;
 }
 
 .size-option {
@@ -1352,36 +1359,16 @@ legend {
   height: 7px;
 }
 .itemlist .box-wrap .box1 {
-  background: #394230;
+  background: #fff;
+  border: 1.5px solid #000;
   margin-right: 6px;
 }
 .itemlist .box-wrap .box2 {
-  background: #334346;
+  background: #000;
   margin-right: 6px;
 }
 .itemlist .box-wrap .box3 {
-  background: #c287b0;
-  margin-right: 6px;
-}
-.itemlist .box-wrap .box4 {
-  background: #a1942b;
-  margin-right: 6px;
-}
-.itemlist .box-wrap .box5 {
-  background: #000000;
-}
-.itemlist .box-wrap .box6 {
-  background: #4b2227;
-  margin-right: 6px;
-}
-.itemlist .box-wrap .box7 {
-  background: #e2c98e;
-}
-.itemlist .box-wrap .box8 {
-  background: #ac946f;
-}
-.itemlist .box-wrap .box9 {
-  background: #000000;
+  background: #35311f;
   margin-right: 6px;
 }
 .itemlist .swiper {
